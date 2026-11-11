@@ -1,0 +1,13 @@
+{
+  "records": 3652,
+  "errors": 0,
+  "units": 3,
+  "unit_wall_seconds_sum": 2967.68,
+  "elapsed_seconds": 2967.76,
+  "peak_memory_gb": 27.023,
+  "engine": "transformers-native",
+  "engine_version": "transformers 5.16.1",
+  "batch_size": 8,
+  "concurrent_workers_hint": 1,
+  "gpu_memory_utilization": null
+}

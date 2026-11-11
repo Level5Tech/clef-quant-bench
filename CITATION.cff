@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it."
+title: "The Noise Floor of a Quantization Comparison"
+type: software
+authors:
+  - family-names: Blagojevich
+    given-names: Aleks
+    affiliation: Level5
+  - family-names: Sunderland
+    given-names: Trevor
+    affiliation: Level5
+repository-code: "https://github.com/Level5Tech/clef-quant-bench"
+license: Apache-2.0

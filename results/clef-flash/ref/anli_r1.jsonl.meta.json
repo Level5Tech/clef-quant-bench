@@ -1,0 +1,18 @@
+{
+  "engine": "transformers-native",
+  "transformers": "5.16.1",
+  "torch": "2.14.0a0+b2c75dd062.nv26.09",
+  "dtype": "bfloat16",
+  "model_dir": "/hf/hub/models--Cloudflare--clef-flash/snapshots/8b2e5fd17c09fd49bc2880b805d5323ec7ff4ff3",
+  "model_name": "clef-flash",
+  "config": "ref",
+  "records_file": "/home/aleks/clef-quant/bench/data/records/anli_r1.jsonl",
+  "batch_size": 1,
+  "records": 1000,
+  "errors": 0,
+  "load_seconds": 137.27,
+  "wall_seconds": 158.519,
+  "records_per_second": 6.308,
+  "peak_gpu_mem_gib": 17.868,
+  "gpu": "NVIDIA GB10"
+}

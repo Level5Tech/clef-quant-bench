@@ -1,0 +1,890 @@
+{
+  "model": "clef",
+  "n_records": 2400,
+  "n_questions": 2400,
+  "exploratory_not_preregistered": true,
+  "formats": {
+    "fp8": {
+      "instances": [
+        "fp8",
+        "fp8-r2",
+        "fp8-r3"
+      ],
+      "missing": [],
+      "pairs": {
+        "fp8|fp8-r2": {
+          "a": "fp8",
+          "b": "fp8-r2",
+          "label": "fp8 vs fp8-r2",
+          "group": "restart_probes",
+          "n_questions": 2400,
+          "n_records": 2400,
+          "flips": 0,
+          "flip_rate": 0.0,
+          "flip_ci95": [
+            0.0,
+            0.0
+          ],
+          "flip_ci95_exact_cp": [
+            0.0,
+            0.0015358524754633355
+          ],
+          "tvd_mean": 0.0005540602877044795,
+          "tvd_ci95": [
+            0.000364949791953225,
+            0.0007824367400622627
+          ],
+          "max_dprob": 0.11701449292164268,
+          "max_dprob_at": {
+            "task": "contractnli",
+            "id": "contractnli-193"
+          },
+          "identical_basis": "logits",
+          "n_identical_records": 2288,
+          "share_identical": 0.9533333333333334,
+          "share_identical_ci95": [
+            0.9445833333333333,
+            0.96125
+          ],
+          "flips_by_task": {
+            "anli_r1": 0,
+            "anli_r2": 0,
+            "anli_r3": 0,
+            "arc_challenge": 0,
+            "banking77": 0,
+            "boolq": 0,
+            "clinc150": 0,
+            "contractnli": 0,
+            "mmlu": 0,
+            "ragtruth": 0,
+            "sst5": 0,
+            "when2call": 0
+          },
+          "share_identical_by_task": {
+            "anli_r1": 0.99,
+            "anli_r2": 0.99,
+            "anli_r3": 0.99,
+            "arc_challenge": 0.99,
+            "banking77": 0.99,
+            "boolq": 1.0,
+            "clinc150": 0.665,
+            "contractnli": 0.87,
+            "mmlu": 0.99,
+            "ragtruth": 0.985,
+            "sst5": 0.99,
+            "when2call": 0.99
+          },
+          "max_dlogit_raw": 0.46875,
+          "max_dlogit_centered": 0.3876953125
+        },
+        "fp8|fp8-r3": {
+          "a": "fp8",
+          "b": "fp8-r3",
+          "label": "fp8 vs fp8-r3",
+          "group": "restart_probes",
+          "n_questions": 2400,
+          "n_records": 2400,
+          "flips": 0,
+          "flip_rate": 0.0,
+          "flip_ci95": [
+            0.0,
+            0.0
+          ],
+          "flip_ci95_exact_cp": [
+            0.0,
+            0.0015358524754633355
+          ],
+          "tvd_mean": 0.00045186205281485793,
+          "tvd_ci95": [
+            0.00028825772655702677,
+            0.0006470432701681347
+          ],
+          "max_dprob": 0.11701449292164268,
+          "max_dprob_at": {
+            "task": "contractnli",
+            "id": "contractnli-193"
+          },
+          "identical_basis": "logits",
+          "n_identical_records": 2291,
+          "share_identical": 0.9545833333333333,
+          "share_identical_ci95": [
+            0.9458333333333333,
+            0.9625
+          ],
+          "flips_by_task": {
+            "anli_r1": 0,
+            "anli_r2": 0,
+            "anli_r3": 0,
+            "arc_challenge": 0,
+            "banking77": 0,
+            "boolq": 0,
+            "clinc150": 0,
+            "contractnli": 0,
+            "mmlu": 0,
+            "ragtruth": 0,
+            "sst5": 0,
+            "when2call": 0
+          },
+          "share_identical_by_task": {
+            "anli_r1": 0.99,
+            "anli_r2": 1.0,
+            "anli_r3": 0.99,
+            "arc_challenge": 0.99,
+            "banking77": 0.99,
+            "boolq": 0.99,
+            "clinc150": 0.66,
+            "contractnli": 0.865,
+            "mmlu": 1.0,
+            "ragtruth": 1.0,
+            "sst5": 0.99,
+            "when2call": 0.99
+          },
+          "max_dlogit_raw": 0.46875,
+          "max_dlogit_centered": 0.3177083333333333
+        },
+        "fp8-r2|fp8-r3": {
+          "a": "fp8-r2",
+          "b": "fp8-r3",
+          "label": "fp8-r2 vs fp8-r3",
+          "group": "restart_probes",
+          "n_questions": 2400,
+          "n_records": 2400,
+          "flips": 0,
+          "flip_rate": 0.0,
+          "flip_ci95": [
+            0.0,
+            0.0
+          ],
+          "flip_ci95_exact_cp": [
+            0.0,
+            0.0015358524754633355
+          ],
+          "tvd_mean": 0.0002897462109664627,
+          "tvd_ci95": [
+            0.00016740801975713353,
+            0.0004462751297685147
+          ],
+          "max_dprob": 0.11097124066817121,
+          "max_dprob_at": {
+            "task": "mmlu",
+            "id": "mmlu-3"
+          },
+          "identical_basis": "logits",
+          "n_identical_records": 2317,
+          "share_identical": 0.9654166666666667,
+          "share_identical_ci95": [
+            0.9579166666666666,
+            0.9725104166666666
+          ],
+          "flips_by_task": {
+            "anli_r1": 0,
+            "anli_r2": 0,
+            "anli_r3": 0,
+            "arc_challenge": 0,
+            "banking77": 0,
+            "boolq": 0,
+            "clinc150": 0,
+            "contractnli": 0,
+            "mmlu": 0,
+            "ragtruth": 0,
+            "sst5": 0,
+            "when2call": 0
+          },
+          "share_identical_by_task": {
+            "anli_r1": 0.99,
+            "anli_r2": 0.99,
+            "anli_r3": 0.99,
+            "arc_challenge": 0.99,
+            "banking77": 0.99,
+            "boolq": 0.99,
+            "clinc150": 0.69,
+            "contractnli": 0.99,
+            "mmlu": 0.99,
+            "ragtruth": 0.985,
+            "sst5": 1.0,
+            "when2call": 0.99
+          },
+          "max_dlogit_raw": 0.453125,
+          "max_dlogit_centered": 0.3876953125
+        }
+      },
+      "vs_ref": {
+        "fp8": {
+          "a": "ref",
+          "b": "fp8",
+          "label": "fp8 vs ref",
+          "group": "restart_probes",
+          "n_questions": 2400,
+          "n_records": 2400,
+          "flips": 33,
+          "flip_rate": 0.01375,
+          "flip_ci95": [
+            0.009166666666666667,
+            0.018333333333333333
+          ],
+          "flip_ci95_exact_cp": [
+            0.009483264232490443,
+            0.019256352461387283
+          ],
+          "tvd_mean": 0.019064711435621207,
+          "tvd_ci95": [
+            0.017681214248161357,
+            0.020608688114430493
+          ],
+          "max_dprob": 0.46841239285562214,
+          "max_dprob_at": {
+            "task": "ragtruth",
+            "id": "ragtruth-185"
+          },
+          "identical_basis": "logits",
+          "n_identical_records": 1,
+          "share_identical": 0.0004166666666666667,
+          "share_identical_ci95": [
+            0.0,
+            0.00125
+          ],
+          "flips_by_task": {
+            "anli_r1": 2,
+            "anli_r2": 5,
+            "anli_r3": 8,
+            "arc_challenge": 1,
+            "banking77": 0,
+            "boolq": 0,
+            "clinc150": 0,
+            "contractnli": 1,
+            "mmlu": 3,
+            "ragtruth": 7,
+            "sst5": 4,
+            "when2call": 2
+          },
+          "share_identical_by_task": {
+            "anli_r1": 0.0,
+            "anli_r2": 0.0,
+            "anli_r3": 0.0,
+            "arc_challenge": 0.0,
+            "banking77": 0.0,
+            "boolq": 0.005,
+            "clinc150": 0.0,
+            "contractnli": 0.0,
+            "mmlu": 0.0,
+            "ragtruth": 0.0,
+            "sst5": 0.0,
+            "when2call": 0.0
+          },
+          "max_dlogit_raw": 1.97265625,
+          "max_dlogit_centered": 1.3359375
+        },
+        "fp8-r2": {
+          "a": "ref",
+          "b": "fp8-r2",
+          "label": "fp8-r2 vs ref",
+          "group": "restart_probes",
+          "n_questions": 2400,
+          "n_records": 2400,
+          "flips": 33,
+          "flip_rate": 0.01375,
+          "flip_ci95": [
+            0.009166666666666667,
+            0.018333333333333333
+          ],
+          "flip_ci95_exact_cp": [
+            0.009483264232490443,
+            0.019256352461387283
+          ],
+          "tvd_mean": 0.019110221587032163,
+          "tvd_ci95": [
+            0.01774810743413216,
+            0.020627607751079018
+          ],
+          "max_dprob": 0.46841239285562214,
+          "max_dprob_at": {
+            "task": "ragtruth",
+            "id": "ragtruth-185"
+          },
+          "identical_basis": "logits",
+          "n_identical_records": 1,
+          "share_identical": 0.0004166666666666667,
+          "share_identical_ci95": [
+            0.0,
+            0.00125
+          ],
+          "flips_by_task": {
+            "anli_r1": 2,
+            "anli_r2": 5,
+            "anli_r3": 8,
+            "arc_challenge": 1,
+            "banking77": 0,
+            "boolq": 0,
+            "clinc150": 0,
+            "contractnli": 1,
+            "mmlu": 3,
+            "ragtruth": 7,
+            "sst5": 4,
+            "when2call": 2
+          },
+          "share_identical_by_task": {
+            "anli_r1": 0.0,
+            "anli_r2": 0.0,
+            "anli_r3": 0.0,
+            "arc_challenge": 0.0,
+            "banking77": 0.0,
+            "boolq": 0.005,
+            "clinc150": 0.0,
+            "contractnli": 0.0,
+            "mmlu": 0.0,
+            "ragtruth": 0.0,
+            "sst5": 0.0,
+            "when2call": 0.0
+          },
+          "max_dlogit_raw": 1.97265625,
+          "max_dlogit_centered": 1.3359375
+        },
+        "fp8-r3": {
+          "a": "ref",
+          "b": "fp8-r3",
+          "label": "fp8-r3 vs ref",
+          "group": "restart_probes",
+          "n_questions": 2400,
+          "n_records": 2400,
+          "flips": 33,
+          "flip_rate": 0.01375,
+          "flip_ci95": [
+            0.009166666666666667,
+            0.018333333333333333
+          ],
+          "flip_ci95_exact_cp": [
+            0.009483264232490443,
+            0.019256352461387283
+          ],
+          "tvd_mean": 0.019184933054922495,
+          "tvd_ci95": [
+            0.017812709761633228,
+            0.020704044482116084
+          ],
+          "max_dprob": 0.46841239285562214,
+          "max_dprob_at": {
+            "task": "ragtruth",
+            "id": "ragtruth-185"
+          },
+          "identical_basis": "logits",
+          "n_identical_records": 1,
+          "share_identical": 0.0004166666666666667,
+          "share_identical_ci95": [
+            0.0,
+            0.00125
+          ],
+          "flips_by_task": {
+            "anli_r1": 2,
+            "anli_r2": 5,
+            "anli_r3": 8,
+            "arc_challenge": 1,
+            "banking77": 0,
+            "boolq": 0,
+            "clinc150": 0,
+            "contractnli": 1,
+            "mmlu": 3,
+            "ragtruth": 7,
+            "sst5": 4,
+            "when2call": 2
+          },
+          "share_identical_by_task": {
+            "anli_r1": 0.0,
+            "anli_r2": 0.0,
+            "anli_r3": 0.0,
+            "arc_challenge": 0.0,
+            "banking77": 0.0,
+            "boolq": 0.005,
+            "clinc150": 0.0,
+            "contractnli": 0.0,
+            "mmlu": 0.0,
+            "ragtruth": 0.0,
+            "sst5": 0.0,
+            "when2call": 0.0
+          },
+          "max_dlogit_raw": 1.97265625,
+          "max_dlogit_centered": 1.3359375
+        }
+      },
+      "vs_ref_flips_min": 33,
+      "vs_ref_flips_max": 33,
+      "discreteness": {
+        "base_vs_r2_context": {
+          "identical": {
+            "n": 2288,
+            "share": 0.9533333333333334
+          },
+          "different": {
+            "n": 112,
+            "share": 0.04666666666666667
+          },
+          "n_records": 2400
+        },
+        "r3_vs_base_and_r2": {
+          "equals_base_only": {
+            "n": 33,
+            "share": 0.01375
+          },
+          "equals_r2_only": {
+            "n": 59,
+            "share": 0.024583333333333332
+          },
+          "equals_both": {
+            "n": 2258,
+            "share": 0.9408333333333333
+          },
+          "equals_neither": {
+            "n": 50,
+            "share": 0.020833333333333332
+          },
+          "n_records": 2400
+        },
+        "first_instance_differs_by_position": {
+          "n": 59,
+          "first_half": 32,
+          "second_half": 27
+        }
+      }
+    },
+    "nvfp4": {
+      "instances": [
+        "nvfp4",
+        "nvfp4-r2",
+        "nvfp4-r3"
+      ],
+      "missing": [],
+      "pairs": {
+        "nvfp4|nvfp4-r2": {
+          "a": "nvfp4",
+          "b": "nvfp4-r2",
+          "label": "nvfp4 vs nvfp4-r2",
+          "group": "restart_probes",
+          "n_questions": 2400,
+          "n_records": 2400,
+          "flips": 22,
+          "flip_rate": 0.009166666666666667,
+          "flip_ci95": [
+            0.005416666666666667,
+            0.013333333333333334
+          ],
+          "flip_ci95_exact_cp": [
+            0.005753362885167154,
+            0.013845728101353379
+          ],
+          "tvd_mean": 0.007097051010650914,
+          "tvd_ci95": [
+            0.005813020207347888,
+            0.008562688727406653
+          ],
+          "max_dprob": 0.5891399380596143,
+          "max_dprob_at": {
+            "task": "anli_r1",
+            "id": "anli_r1-105"
+          },
+          "identical_basis": "logits",
+          "n_identical_records": 2087,
+          "share_identical": 0.8695833333333334,
+          "share_identical_ci95": [
+            0.85625,
+            0.8829166666666667
+          ],
+          "flips_by_task": {
+            "anli_r1": 9,
+            "anli_r2": 10,
+            "anli_r3": 0,
+            "arc_challenge": 0,
+            "banking77": 0,
+            "boolq": 0,
+            "clinc150": 0,
+            "contractnli": 1,
+            "mmlu": 0,
+            "ragtruth": 1,
+            "sst5": 0,
+            "when2call": 1
+          },
+          "share_identical_by_task": {
+            "anli_r1": 0.44,
+            "anli_r2": 0.485,
+            "anli_r3": 0.985,
+            "arc_challenge": 1.0,
+            "banking77": 0.975,
+            "boolq": 1.0,
+            "clinc150": 0.63,
+            "contractnli": 0.99,
+            "mmlu": 0.985,
+            "ragtruth": 0.97,
+            "sst5": 0.99,
+            "when2call": 0.985
+          },
+          "max_dlogit_raw": 1.85546875,
+          "max_dlogit_centered": 2.0598958333333335
+        },
+        "nvfp4|nvfp4-r3": {
+          "a": "nvfp4",
+          "b": "nvfp4-r3",
+          "label": "nvfp4 vs nvfp4-r3",
+          "group": "restart_probes",
+          "n_questions": 2400,
+          "n_records": 2400,
+          "flips": 22,
+          "flip_rate": 0.009166666666666667,
+          "flip_ci95": [
+            0.005833333333333334,
+            0.013333333333333334
+          ],
+          "flip_ci95_exact_cp": [
+            0.005753362885167154,
+            0.013845728101353379
+          ],
+          "tvd_mean": 0.007535231871069953,
+          "tvd_ci95": [
+            0.006267185462905853,
+            0.008991516670876108
+          ],
+          "max_dprob": 0.5891399380596143,
+          "max_dprob_at": {
+            "task": "anli_r1",
+            "id": "anli_r1-105"
+          },
+          "identical_basis": "logits",
+          "n_identical_records": 1887,
+          "share_identical": 0.78625,
+          "share_identical_ci95": [
+            0.7704166666666666,
+            0.8025
+          ],
+          "flips_by_task": {
+            "anli_r1": 9,
+            "anli_r2": 10,
+            "anli_r3": 0,
+            "arc_challenge": 0,
+            "banking77": 0,
+            "boolq": 0,
+            "clinc150": 1,
+            "contractnli": 0,
+            "mmlu": 0,
+            "ragtruth": 0,
+            "sst5": 1,
+            "when2call": 1
+          },
+          "share_identical_by_task": {
+            "anli_r1": 0.425,
+            "anli_r2": 0.475,
+            "anli_r3": 0.95,
+            "arc_challenge": 0.97,
+            "banking77": 0.75,
+            "boolq": 0.95,
+            "clinc150": 0.39,
+            "contractnli": 0.95,
+            "mmlu": 0.935,
+            "ragtruth": 0.805,
+            "sst5": 0.935,
+            "when2call": 0.9
+          },
+          "max_dlogit_raw": 1.85546875,
+          "max_dlogit_centered": 2.0598958333333335
+        },
+        "nvfp4-r2|nvfp4-r3": {
+          "a": "nvfp4-r2",
+          "b": "nvfp4-r3",
+          "label": "nvfp4-r2 vs nvfp4-r3",
+          "group": "restart_probes",
+          "n_questions": 2400,
+          "n_records": 2400,
+          "flips": 4,
+          "flip_rate": 0.0016666666666666668,
+          "flip_ci95": [
+            0.0004166666666666667,
+            0.0033333333333333335
+          ],
+          "flip_ci95_exact_cp": [
+            0.0004542914074727406,
+            0.004261782418894524
+          ],
+          "tvd_mean": 0.0014112418002033156,
+          "tvd_ci95": [
+            0.000971836407720096,
+            0.0019935374935153723
+          ],
+          "max_dprob": 0.43580107879133395,
+          "max_dprob_at": {
+            "task": "ragtruth",
+            "id": "ragtruth-6"
+          },
+          "identical_basis": "logits",
+          "n_identical_records": 2082,
+          "share_identical": 0.8675,
+          "share_identical_ci95": [
+            0.8533333333333334,
+            0.88
+          ],
+          "flips_by_task": {
+            "anli_r1": 0,
+            "anli_r2": 0,
+            "anli_r3": 0,
+            "arc_challenge": 0,
+            "banking77": 0,
+            "boolq": 0,
+            "clinc150": 1,
+            "contractnli": 1,
+            "mmlu": 0,
+            "ragtruth": 1,
+            "sst5": 1,
+            "when2call": 0
+          },
+          "share_identical_by_task": {
+            "anli_r1": 0.92,
+            "anli_r2": 0.95,
+            "anli_r3": 0.955,
+            "arc_challenge": 0.97,
+            "banking77": 0.76,
+            "boolq": 0.95,
+            "clinc150": 0.38,
+            "contractnli": 0.945,
+            "mmlu": 0.935,
+            "ragtruth": 0.8,
+            "sst5": 0.935,
+            "when2call": 0.91
+          },
+          "max_dlogit_raw": 1.3984375,
+          "max_dlogit_centered": 0.9938948675496688
+        }
+      },
+      "vs_ref": {
+        "nvfp4": {
+          "a": "ref",
+          "b": "nvfp4",
+          "label": "nvfp4 vs ref",
+          "group": "restart_probes",
+          "n_questions": 2400,
+          "n_records": 2400,
+          "flips": 137,
+          "flip_rate": 0.05708333333333333,
+          "flip_ci95": [
+            0.04833333333333333,
+            0.06625
+          ],
+          "flip_ci95_exact_cp": [
+            0.04813847275908678,
+            0.06712721016525874
+          ],
+          "tvd_mean": 0.05488156542946373,
+          "tvd_ci95": [
+            0.05145767919666411,
+            0.05841364108738291
+          ],
+          "max_dprob": 0.6176406779779152,
+          "max_dprob_at": {
+            "task": "mmlu",
+            "id": "mmlu-106"
+          },
+          "identical_basis": "logits",
+          "n_identical_records": 0,
+          "share_identical": 0.0,
+          "share_identical_ci95": [
+            0.0,
+            0.0
+          ],
+          "flips_by_task": {
+            "anli_r1": 18,
+            "anli_r2": 25,
+            "anli_r3": 29,
+            "arc_challenge": 2,
+            "banking77": 1,
+            "boolq": 5,
+            "clinc150": 1,
+            "contractnli": 11,
+            "mmlu": 12,
+            "ragtruth": 18,
+            "sst5": 8,
+            "when2call": 7
+          },
+          "share_identical_by_task": {
+            "anli_r1": 0.0,
+            "anli_r2": 0.0,
+            "anli_r3": 0.0,
+            "arc_challenge": 0.0,
+            "banking77": 0.0,
+            "boolq": 0.0,
+            "clinc150": 0.0,
+            "contractnli": 0.0,
+            "mmlu": 0.0,
+            "ragtruth": 0.0,
+            "sst5": 0.0,
+            "when2call": 0.0
+          },
+          "max_dlogit_raw": 3.578125,
+          "max_dlogit_centered": 2.5791015625
+        },
+        "nvfp4-r2": {
+          "a": "ref",
+          "b": "nvfp4-r2",
+          "label": "nvfp4-r2 vs ref",
+          "group": "restart_probes",
+          "n_questions": 2400,
+          "n_records": 2400,
+          "flips": 139,
+          "flip_rate": 0.057916666666666665,
+          "flip_ci95": [
+            0.049166666666666664,
+            0.06708333333333333
+          ],
+          "flip_ci95_exact_cp": [
+            0.04890742263828848,
+            0.0680226499932
+          ],
+          "tvd_mean": 0.054746858266063375,
+          "tvd_ci95": [
+            0.05126725874885621,
+            0.05837222336260577
+          ],
+          "max_dprob": 0.6176406779779152,
+          "max_dprob_at": {
+            "task": "mmlu",
+            "id": "mmlu-106"
+          },
+          "identical_basis": "logits",
+          "n_identical_records": 0,
+          "share_identical": 0.0,
+          "share_identical_ci95": [
+            0.0,
+            0.0
+          ],
+          "flips_by_task": {
+            "anli_r1": 21,
+            "anli_r2": 25,
+            "anli_r3": 29,
+            "arc_challenge": 2,
+            "banking77": 1,
+            "boolq": 5,
+            "clinc150": 1,
+            "contractnli": 12,
+            "mmlu": 12,
+            "ragtruth": 17,
+            "sst5": 8,
+            "when2call": 6
+          },
+          "share_identical_by_task": {
+            "anli_r1": 0.0,
+            "anli_r2": 0.0,
+            "anli_r3": 0.0,
+            "arc_challenge": 0.0,
+            "banking77": 0.0,
+            "boolq": 0.0,
+            "clinc150": 0.0,
+            "contractnli": 0.0,
+            "mmlu": 0.0,
+            "ragtruth": 0.0,
+            "sst5": 0.0,
+            "when2call": 0.0
+          },
+          "max_dlogit_raw": 3.578125,
+          "max_dlogit_centered": 2.5791015625
+        },
+        "nvfp4-r3": {
+          "a": "ref",
+          "b": "nvfp4-r3",
+          "label": "nvfp4-r3 vs ref",
+          "group": "restart_probes",
+          "n_questions": 2400,
+          "n_records": 2400,
+          "flips": 137,
+          "flip_rate": 0.05708333333333333,
+          "flip_ci95": [
+            0.04833333333333333,
+            0.06625
+          ],
+          "flip_ci95_exact_cp": [
+            0.04813847275908678,
+            0.06712721016525874
+          ],
+          "tvd_mean": 0.05470697870104264,
+          "tvd_ci95": [
+            0.05117787716467229,
+            0.05820663886585971
+          ],
+          "max_dprob": 0.6176406779779152,
+          "max_dprob_at": {
+            "task": "mmlu",
+            "id": "mmlu-106"
+          },
+          "identical_basis": "logits",
+          "n_identical_records": 0,
+          "share_identical": 0.0,
+          "share_identical_ci95": [
+            0.0,
+            0.0
+          ],
+          "flips_by_task": {
+            "anli_r1": 21,
+            "anli_r2": 25,
+            "anli_r3": 29,
+            "arc_challenge": 2,
+            "banking77": 1,
+            "boolq": 5,
+            "clinc150": 0,
+            "contractnli": 11,
+            "mmlu": 12,
+            "ragtruth": 18,
+            "sst5": 7,
+            "when2call": 6
+          },
+          "share_identical_by_task": {
+            "anli_r1": 0.0,
+            "anli_r2": 0.0,
+            "anli_r3": 0.0,
+            "arc_challenge": 0.0,
+            "banking77": 0.0,
+            "boolq": 0.0,
+            "clinc150": 0.0,
+            "contractnli": 0.0,
+            "mmlu": 0.0,
+            "ragtruth": 0.0,
+            "sst5": 0.0,
+            "when2call": 0.0
+          },
+          "max_dlogit_raw": 3.578125,
+          "max_dlogit_centered": 2.5791015625
+        }
+      },
+      "vs_ref_flips_min": 137,
+      "vs_ref_flips_max": 139,
+      "discreteness": {
+        "base_vs_r2_context": {
+          "identical": {
+            "n": 2087,
+            "share": 0.8695833333333334
+          },
+          "different": {
+            "n": 313,
+            "share": 0.13041666666666665
+          },
+          "n_records": 2400
+        },
+        "r3_vs_base_and_r2": {
+          "equals_base_only": {
+            "n": 29,
+            "share": 0.012083333333333333
+          },
+          "equals_r2_only": {
+            "n": 224,
+            "share": 0.09333333333333334
+          },
+          "equals_both": {
+            "n": 1858,
+            "share": 0.7741666666666667
+          },
+          "equals_neither": {
+            "n": 289,
+            "share": 0.12041666666666667
+          },
+          "n_records": 2400
+        },
+        "first_instance_differs_by_position": {
+          "n": 224,
+          "first_half": 120,
+          "second_half": 104
+        }
+      }
+    }
+  }
+}

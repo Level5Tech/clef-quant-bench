@@ -1,0 +1,13 @@
+{
+  "records": 3080,
+  "errors": 0,
+  "units": 15,
+  "unit_wall_seconds_sum": 5615.59,
+  "elapsed_seconds": null,
+  "peak_memory_gb": 33.163,
+  "engine": "llama.cpp",
+  "engine_version": "b11671-ba3c05f71",
+  "batch_size": 1,
+  "concurrent_workers_hint": 1,
+  "gpu_memory_utilization": null
+}

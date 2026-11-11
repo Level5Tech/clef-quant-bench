@@ -1,0 +1,371 @@
+{
+  "model": "clef-flash",
+  "config": "q4_k_m",
+  "engine": "llama.cpp",
+  "engine_version": "b11671-ba3c05f71",
+  "batch_size": 1,
+  "concurrency": 1,
+  "timing": "HTTP round trip to localhost (includes server-side tokenisation and encoding)",
+  "warmup_requests": 20,
+  "warmup_errors": 0,
+  "sample_per_set": 300,
+  "sample_seed": "clef-quant-latency-v1",
+  "public_sets": [
+    "anli_r1",
+    "anli_r2",
+    "anli_r3",
+    "arc_challenge",
+    "banking77",
+    "boolq",
+    "clinc150",
+    "contractnli",
+    "mmlu",
+    "ragtruth",
+    "sst5",
+    "when2call"
+  ],
+  "private_sets": [
+    "r1",
+    "r2",
+    "r4a",
+    "r4b"
+  ],
+  "overall": {
+    "n": 4800,
+    "errors": 0,
+    "p50_ms": 121.026,
+    "p95_ms": 1120.488,
+    "p99_ms": 1132.368,
+    "mean_ms": 253.556,
+    "min_ms": 74.968,
+    "max_ms": 1450.506,
+    "decisions_per_sec": 3.9436,
+    "wall_seconds": 1217.165
+  },
+  "per_set": {
+    "anli_r1": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 103.703,
+      "p95_ms": 113.595,
+      "p99_ms": 118.389,
+      "mean_ms": 105.851,
+      "min_ms": 94.578,
+      "max_ms": 122.908,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 288.3,
+        "p50": 287.0,
+        "max": 342
+      },
+      "private": false
+    },
+    "anli_r2": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 102.211,
+      "p95_ms": 112.084,
+      "p99_ms": 113.272,
+      "mean_ms": 104.122,
+      "min_ms": 91.199,
+      "max_ms": 120.681,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 285.6,
+        "p50": 285.0,
+        "max": 344
+      },
+      "private": false
+    },
+    "anli_r3": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 99.469,
+      "p95_ms": 118.758,
+      "p99_ms": 126.171,
+      "mean_ms": 101.57,
+      "min_ms": 85.654,
+      "max_ms": 159.069,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 274.8,
+        "p50": 269.0,
+        "max": 396
+      },
+      "private": false
+    },
+    "arc_challenge": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 84.676,
+      "p95_ms": 95.479,
+      "p99_ms": 102.249,
+      "mean_ms": 85.637,
+      "min_ms": 74.968,
+      "max_ms": 122.077,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 213.0,
+        "p50": 209.5,
+        "max": 343
+      },
+      "private": false
+    },
+    "banking77": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 637.709,
+      "p95_ms": 641.82,
+      "p99_ms": 643.78,
+      "mean_ms": 637.743,
+      "min_ms": 630.13,
+      "max_ms": 647.117,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 1836.4,
+        "p50": 1835.0,
+        "max": 1875
+      },
+      "private": false
+    },
+    "boolq": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 102.087,
+      "p95_ms": 164.55,
+      "p99_ms": 241.085,
+      "mean_ms": 111.08,
+      "min_ms": 79.908,
+      "max_ms": 289.993,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 300.9,
+        "p50": 285.0,
+        "max": 795
+      },
+      "private": false
+    },
+    "clinc150": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 1128.077,
+      "p95_ms": 1133.964,
+      "p99_ms": 1136.683,
+      "mean_ms": 1126.521,
+      "min_ms": 1106.739,
+      "max_ms": 1137.54,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 3103.1,
+        "p50": 3103.0,
+        "max": 3124
+      },
+      "private": false
+    },
+    "contractnli": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 111.515,
+      "p95_ms": 199.137,
+      "p99_ms": 244.238,
+      "mean_ms": 125.093,
+      "min_ms": 84.625,
+      "max_ms": 248.045,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 339.1,
+        "p50": 311.0,
+        "max": 710
+      },
+      "private": false
+    },
+    "mmlu": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 90.892,
+      "p95_ms": 175.414,
+      "p99_ms": 226.002,
+      "mean_ms": 101.33,
+      "min_ms": 75.704,
+      "max_ms": 385.132,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 262.0,
+        "p50": 228.0,
+        "max": 1134
+      },
+      "private": false
+    },
+    "ragtruth": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 305.358,
+      "p95_ms": 596.401,
+      "p99_ms": 786.723,
+      "mean_ms": 335.723,
+      "min_ms": 159.249,
+      "max_ms": 912.881,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 946.2,
+        "p50": 867.5,
+        "max": 2553
+      },
+      "private": false
+    },
+    "sst5": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 84.747,
+      "p95_ms": 91.494,
+      "p99_ms": 93.66,
+      "mean_ms": 85.387,
+      "min_ms": 76.538,
+      "max_ms": 93.795,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 210.9,
+        "p50": 210.0,
+        "max": 251
+      },
+      "private": false
+    },
+    "when2call": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 256.311,
+      "p95_ms": 524.671,
+      "p99_ms": 642.372,
+      "mean_ms": 288.388,
+      "min_ms": 85.155,
+      "max_ms": 1450.506,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 804.9,
+        "p50": 763.0,
+        "max": 3873
+      },
+      "private": false
+    },
+    "r1": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 241.616,
+      "p95_ms": 289.98,
+      "p99_ms": 776.764,
+      "mean_ms": 253.449,
+      "min_ms": 225.575,
+      "max_ms": 832.386,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 725.4,
+        "p50": 681.0,
+        "max": 2400
+      },
+      "private": true
+    },
+    "r2": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 182.461,
+      "p95_ms": 346.428,
+      "p99_ms": 365.183,
+      "mean_ms": 209.385,
+      "min_ms": 121.627,
+      "max_ms": 548.079,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 579.8,
+        "p50": 501.5,
+        "max": 1554
+      },
+      "private": true
+    },
+    "r4a": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 178.196,
+      "p95_ms": 377.207,
+      "p99_ms": 557.835,
+      "mean_ms": 210.703,
+      "min_ms": 161.923,
+      "max_ms": 701.739,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 568.2,
+        "p50": 468.0,
+        "max": 1954
+      },
+      "private": true
+    },
+    "r4b": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 87.368,
+      "p95_ms": 430.548,
+      "p99_ms": 528.114,
+      "mean_ms": 174.908,
+      "min_ms": 75.001,
+      "max_ms": 601.548,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 468.7,
+        "p50": 220.0,
+        "max": 1718
+      },
+      "private": true
+    }
+  },
+  "input_token_buckets": [
+    {
+      "label": "129-256",
+      "n": 1235,
+      "p50_ms": 85.46,
+      "p95_ms": 94.387,
+      "p99_ms": 96.634,
+      "mean_ms": 86.307
+    },
+    {
+      "label": "257-512",
+      "n": 1816,
+      "p50_ms": 110.823,
+      "p95_ms": 179.956,
+      "p99_ms": 183.84,
+      "mean_ms": 124.089
+    },
+    {
+      "label": "513-1024",
+      "n": 870,
+      "p50_ms": 245.312,
+      "p95_ms": 355.404,
+      "p99_ms": 366.201,
+      "mean_ms": 259.626
+    },
+    {
+      "label": "1025-2048",
+      "n": 570,
+      "p50_ms": 634.207,
+      "p95_ms": 641.431,
+      "p99_ms": 646.406,
+      "mean_ms": 549.455
+    },
+    {
+      "label": "2049-4096",
+      "n": 309,
+      "p50_ms": 1127.984,
+      "p95_ms": 1134.0,
+      "p99_ms": 1136.978,
+      "mean_ms": 1119.966
+    }
+  ],
+  "peak_memory_gb": 9.521,
+  "peak_memory_source": "nvidia-smi compute-apps of the server process",
+  "nvidia_smi_peak_gb": 9.521,
+  "file_size_gb": 5.721,
+  "gpu_memory_utilization": null,
+  "other_gpu_processes_at_start": {
+    "count": 2,
+    "total_mib": 10448
+  },
+  "measured_at": "2026-10-22T21:55:08-0700"
+}

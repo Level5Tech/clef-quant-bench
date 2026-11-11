@@ -1,0 +1,105 @@
+{
+  "file_size_gb": 19.063,
+  "peak_memory_gb": 19.547,
+  "engine": "transformers-native",
+  "engine_version": "transformers 5.16.1",
+  "model": "clef-flash",
+  "config": "ref-fla",
+  "batch_size": 1,
+  "runs": [
+    {
+      "file": "anli_r1.jsonl",
+      "records": 200,
+      "errors": 0,
+      "unit_wall_seconds_sum": 22.27,
+      "elapsed_seconds": 22.27
+    },
+    {
+      "file": "anli_r2.jsonl",
+      "records": 200,
+      "errors": 0,
+      "unit_wall_seconds_sum": 22.18,
+      "elapsed_seconds": 22.18
+    },
+    {
+      "file": "anli_r3.jsonl",
+      "records": 200,
+      "errors": 0,
+      "unit_wall_seconds_sum": 21.86,
+      "elapsed_seconds": 21.86
+    },
+    {
+      "file": "arc_challenge.jsonl",
+      "records": 200,
+      "errors": 0,
+      "unit_wall_seconds_sum": 19.87,
+      "elapsed_seconds": 19.87
+    },
+    {
+      "file": "banking77.jsonl",
+      "records": 200,
+      "errors": 0,
+      "unit_wall_seconds_sum": 121.55,
+      "elapsed_seconds": 121.55
+    },
+    {
+      "file": "boolq.jsonl",
+      "records": 200,
+      "errors": 0,
+      "unit_wall_seconds_sum": 22.54,
+      "elapsed_seconds": 22.54
+    },
+    {
+      "file": "clinc150.jsonl",
+      "records": 200,
+      "errors": 0,
+      "unit_wall_seconds_sum": 200.1,
+      "elapsed_seconds": 200.1
+    },
+    {
+      "file": "contractnli.jsonl",
+      "records": 200,
+      "errors": 0,
+      "unit_wall_seconds_sum": 24.0,
+      "elapsed_seconds": 24.0
+    },
+    {
+      "file": "mmlu.jsonl",
+      "records": 200,
+      "errors": 0,
+      "unit_wall_seconds_sum": 21.69,
+      "elapsed_seconds": 21.69
+    },
+    {
+      "file": "ragtruth.jsonl",
+      "records": 200,
+      "errors": 0,
+      "unit_wall_seconds_sum": 58.53,
+      "elapsed_seconds": 58.53
+    },
+    {
+      "file": "sst5.jsonl",
+      "records": 200,
+      "errors": 0,
+      "unit_wall_seconds_sum": 19.84,
+      "elapsed_seconds": 19.83
+    },
+    {
+      "file": "when2call.jsonl",
+      "records": 200,
+      "errors": 0,
+      "unit_wall_seconds_sum": 47.78,
+      "elapsed_seconds": 47.79
+    }
+  ],
+  "concurrent_workers_max": 1,
+  "gpu_memory_utilization": null,
+  "max_num_seqs": null,
+  "client_concurrency": 1,
+  "gdn_kernel": "fla",
+  "subset": true,
+  "repeat_of": null,
+  "repeat_note": null,
+  "latency_note": "latency_ms in the result rows was measured with other workers running concurrently: use results-latency/ for latency, not these rows",
+  "memory_note": "peak = per-worker process GPU memory (torch allocator / vLLM plugin weights + activations / nvidia-smi for llama.cpp); unaffected by other workers"
+}

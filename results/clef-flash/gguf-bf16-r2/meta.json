@@ -1,0 +1,105 @@
+{
+  "file_size_gb": 18.164,
+  "peak_memory_gb": 20.524,
+  "engine": "llama.cpp",
+  "engine_version": "b11671-ba3c05f71",
+  "model": "clef-flash",
+  "config": "gguf-bf16-r2",
+  "batch_size": 1,
+  "runs": [
+    {
+      "file": "anli_r1.jsonl",
+      "records": 200,
+      "errors": 0,
+      "unit_wall_seconds_sum": 23.56,
+      "elapsed_seconds": null
+    },
+    {
+      "file": "anli_r2.jsonl",
+      "records": 200,
+      "errors": 0,
+      "unit_wall_seconds_sum": 23.26,
+      "elapsed_seconds": null
+    },
+    {
+      "file": "anli_r3.jsonl",
+      "records": 200,
+      "errors": 0,
+      "unit_wall_seconds_sum": 22.82,
+      "elapsed_seconds": null
+    },
+    {
+      "file": "arc_challenge.jsonl",
+      "records": 200,
+      "errors": 0,
+      "unit_wall_seconds_sum": 20.97,
+      "elapsed_seconds": null
+    },
+    {
+      "file": "banking77.jsonl",
+      "records": 200,
+      "errors": 0,
+      "unit_wall_seconds_sum": 112.02,
+      "elapsed_seconds": null
+    },
+    {
+      "file": "boolq.jsonl",
+      "records": 200,
+      "errors": 0,
+      "unit_wall_seconds_sum": 23.82,
+      "elapsed_seconds": null
+    },
+    {
+      "file": "clinc150.jsonl",
+      "records": 200,
+      "errors": 0,
+      "unit_wall_seconds_sum": 191.18,
+      "elapsed_seconds": null
+    },
+    {
+      "file": "contractnli.jsonl",
+      "records": 200,
+      "errors": 0,
+      "unit_wall_seconds_sum": 25.12,
+      "elapsed_seconds": null
+    },
+    {
+      "file": "mmlu.jsonl",
+      "records": 200,
+      "errors": 0,
+      "unit_wall_seconds_sum": 22.84,
+      "elapsed_seconds": null
+    },
+    {
+      "file": "ragtruth.jsonl",
+      "records": 200,
+      "errors": 0,
+      "unit_wall_seconds_sum": 58.09,
+      "elapsed_seconds": null
+    },
+    {
+      "file": "sst5.jsonl",
+      "records": 200,
+      "errors": 0,
+      "unit_wall_seconds_sum": 20.78,
+      "elapsed_seconds": null
+    },
+    {
+      "file": "when2call.jsonl",
+      "records": 200,
+      "errors": 0,
+      "unit_wall_seconds_sum": 48.74,
+      "elapsed_seconds": null
+    }
+  ],
+  "concurrent_workers_max": 0,
+  "gpu_memory_utilization": null,
+  "max_num_seqs": null,
+  "client_concurrency": 1,
+  "gdn_kernel": null,
+  "subset": true,
+  "repeat_of": "gguf-bf16",
+  "repeat_note": "second server instance of gguf-bf16, same flags, first records of each public task: defines the cross-restart noise floor",
+  "latency_note": "latency_ms in the result rows was measured with other workers running concurrently: use results-latency/ for latency, not these rows",
+  "memory_note": "peak = per-worker process GPU memory (torch allocator / vLLM plugin weights + activations / nvidia-smi for llama.cpp); unaffected by other workers"
+}

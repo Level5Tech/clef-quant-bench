@@ -1,0 +1,2355 @@
+{
+  "meta": {
+    "model": "clef",
+    "unit": "first 200 records of each of 12 public tasks",
+    "unit_n_per_task": 200,
+    "tasks": [
+      "anli_r1",
+      "anli_r2",
+      "anli_r3",
+      "arc_challenge",
+      "banking77",
+      "boolq",
+      "clinc150",
+      "contractnli",
+      "mmlu",
+      "ragtruth",
+      "sst5",
+      "when2call"
+    ],
+    "n_records": 2400,
+    "n_questions": 2400,
+    "n_boot": 2000,
+    "seed": 20261015,
+    "bootstrap": "simple paired resampling of records, one shared index matrix; stratified-by-task variant reported for the difference tests",
+    "configs": [
+      "ref",
+      "bf16-srv",
+      "fp8",
+      "nvfp4",
+      "gguf-bf16",
+      "q8_0",
+      "q4_k_m",
+      "ref-r2",
+      "ref-fla",
+      "bf16-srv-r2",
+      "fp8-r2",
+      "nvfp4-r2",
+      "gguf-bf16-r2"
+    ]
+  },
+  "conditions": {
+    "ref": {
+      "engine | engine_version | batch_size (distinct values on the unit)": [
+        "transformers-native | transformers 5.16.1; gdn=transformers-torch-fallback | batch_size=1"
+      ],
+      "tasks_by_value": {
+        "transformers-native | transformers 5.16.1; gdn=transformers-torch-fallback | batch_size=1": [
+          "anli_r1",
+          "anli_r2",
+          "anli_r3",
+          "arc_challenge",
+          "banking77",
+          "boolq",
+          "clinc150",
+          "contractnli",
+          "mmlu",
+          "ragtruth",
+          "sst5",
+          "when2call"
+        ]
+      },
+      "result_lines_read": 31275,
+      "result_lines_outside_unit_ignored": 28875
+    },
+    "bf16-srv": {
+      "engine | engine_version | batch_size (distinct values on the unit)": [
+        "vllm+clef_bench_vllm | vllm 0.29.0+5013de39.dev | batch_size=None"
+      ],
+      "tasks_by_value": {
+        "vllm+clef_bench_vllm | vllm 0.29.0+5013de39.dev | batch_size=None": [
+          "anli_r1",
+          "anli_r2",
+          "anli_r3",
+          "arc_challenge",
+          "banking77",
+          "boolq",
+          "clinc150",
+          "contractnli",
+          "mmlu",
+          "ragtruth",
+          "sst5",
+          "when2call"
+        ]
+      },
+      "result_lines_read": 31275,
+      "result_lines_outside_unit_ignored": 28875
+    },
+    "fp8": {
+      "engine | engine_version | batch_size (distinct values on the unit)": [
+        "vllm+clef_bench_vllm | vllm 0.29.0+5013de39.dev | batch_size=None"
+      ],
+      "tasks_by_value": {
+        "vllm+clef_bench_vllm | vllm 0.29.0+5013de39.dev | batch_size=None": [
+          "anli_r1",
+          "anli_r2",
+          "anli_r3",
+          "arc_challenge",
+          "banking77",
+          "boolq",
+          "clinc150",
+          "contractnli",
+          "mmlu",
+          "ragtruth",
+          "sst5",
+          "when2call"
+        ]
+      },
+      "result_lines_read": 31275,
+      "result_lines_outside_unit_ignored": 28875
+    },
+    "nvfp4": {
+      "engine | engine_version | batch_size (distinct values on the unit)": [
+        "vllm+clef_bench_vllm | vllm 0.29.0+5013de39.dev | batch_size=None"
+      ],
+      "tasks_by_value": {
+        "vllm+clef_bench_vllm | vllm 0.29.0+5013de39.dev | batch_size=None": [
+          "anli_r1",
+          "anli_r2",
+          "anli_r3",
+          "arc_challenge",
+          "banking77",
+          "boolq",
+          "clinc150",
+          "contractnli",
+          "mmlu",
+          "ragtruth",
+          "sst5",
+          "when2call"
+        ]
+      },
+      "result_lines_read": 31275,
+      "result_lines_outside_unit_ignored": 28875
+    },
+    "gguf-bf16": {
+      "engine | engine_version | batch_size (distinct values on the unit)": [
+        "llama.cpp | b11671-ba3c05f71 | batch_size=None"
+      ],
+      "tasks_by_value": {
+        "llama.cpp | b11671-ba3c05f71 | batch_size=None": [
+          "anli_r1",
+          "anli_r2",
+          "anli_r3",
+          "arc_challenge",
+          "banking77",
+          "boolq",
+          "clinc150",
+          "contractnli",
+          "mmlu",
+          "ragtruth",
+          "sst5",
+          "when2call"
+        ]
+      },
+      "result_lines_read": 31275,
+      "result_lines_outside_unit_ignored": 28875
+    },
+    "q8_0": {
+      "engine | engine_version | batch_size (distinct values on the unit)": [
+        "llama.cpp | b11671-ba3c05f71 | batch_size=None"
+      ],
+      "tasks_by_value": {
+        "llama.cpp | b11671-ba3c05f71 | batch_size=None": [
+          "anli_r1",
+          "anli_r2",
+          "anli_r3",
+          "arc_challenge",
+          "banking77",
+          "boolq",
+          "clinc150",
+          "contractnli",
+          "mmlu",
+          "ragtruth",
+          "sst5",
+          "when2call"
+        ]
+      },
+      "result_lines_read": 31275,
+      "result_lines_outside_unit_ignored": 28875
+    },
+    "q4_k_m": {
+      "engine | engine_version | batch_size (distinct values on the unit)": [
+        "llama.cpp | b11671-ba3c05f71 | batch_size=None"
+      ],
+      "tasks_by_value": {
+        "llama.cpp | b11671-ba3c05f71 | batch_size=None": [
+          "anli_r1",
+          "anli_r2",
+          "anli_r3",
+          "arc_challenge",
+          "banking77",
+          "boolq",
+          "clinc150",
+          "contractnli",
+          "mmlu",
+          "ragtruth",
+          "sst5",
+          "when2call"
+        ]
+      },
+      "result_lines_read": 31275,
+      "result_lines_outside_unit_ignored": 28875
+    },
+    "ref-r2": {
+      "engine | engine_version | batch_size (distinct values on the unit)": [
+        "transformers-native | transformers 5.16.1; gdn=transformers-torch-fallback | batch_size=8"
+      ],
+      "tasks_by_value": {
+        "transformers-native | transformers 5.16.1; gdn=transformers-torch-fallback | batch_size=8": [
+          "anli_r1",
+          "anli_r2",
+          "anli_r3",
+          "arc_challenge",
+          "banking77",
+          "boolq",
+          "clinc150",
+          "contractnli",
+          "mmlu",
+          "ragtruth",
+          "sst5",
+          "when2call"
+        ]
+      },
+      "result_lines_read": 31275,
+      "result_lines_outside_unit_ignored": 28875
+    },
+    "ref-fla": {
+      "engine | engine_version | batch_size (distinct values on the unit)": [
+        "transformers-native | transformers 5.16.1; gdn=fla-0.5.2 | batch_size=1"
+      ],
+      "tasks_by_value": {
+        "transformers-native | transformers 5.16.1; gdn=fla-0.5.2 | batch_size=1": [
+          "anli_r1",
+          "anli_r2",
+          "anli_r3",
+          "arc_challenge",
+          "banking77",
+          "boolq",
+          "clinc150",
+          "contractnli",
+          "mmlu",
+          "ragtruth",
+          "sst5",
+          "when2call"
+        ]
+      },
+      "result_lines_read": 2400,
+      "result_lines_outside_unit_ignored": 0
+    },
+    "bf16-srv-r2": {
+      "engine | engine_version | batch_size (distinct values on the unit)": [
+        "vllm+clef_bench_vllm | vllm 0.29.0+5013de39.dev | batch_size=None"
+      ],
+      "tasks_by_value": {
+        "vllm+clef_bench_vllm | vllm 0.29.0+5013de39.dev | batch_size=None": [
+          "anli_r1",
+          "anli_r2",
+          "anli_r3",
+          "arc_challenge",
+          "banking77",
+          "boolq",
+          "clinc150",
+          "contractnli",
+          "mmlu",
+          "ragtruth",
+          "sst5",
+          "when2call"
+        ]
+      },
+      "result_lines_read": 2400,
+      "result_lines_outside_unit_ignored": 0
+    },
+    "fp8-r2": {
+      "engine | engine_version | batch_size (distinct values on the unit)": [
+        "vllm+clef_bench_vllm | vllm 0.29.0+5013de39.dev | batch_size=None"
+      ],
+      "tasks_by_value": {
+        "vllm+clef_bench_vllm | vllm 0.29.0+5013de39.dev | batch_size=None": [
+          "anli_r1",
+          "anli_r2",
+          "anli_r3",
+          "arc_challenge",
+          "banking77",
+          "boolq",
+          "clinc150",
+          "contractnli",
+          "mmlu",
+          "ragtruth",
+          "sst5",
+          "when2call"
+        ]
+      },
+      "result_lines_read": 2400,
+      "result_lines_outside_unit_ignored": 0
+    },
+    "nvfp4-r2": {
+      "engine | engine_version | batch_size (distinct values on the unit)": [
+        "vllm+clef_bench_vllm | vllm 0.29.0+5013de39.dev | batch_size=None"
+      ],
+      "tasks_by_value": {
+        "vllm+clef_bench_vllm | vllm 0.29.0+5013de39.dev | batch_size=None": [
+          "anli_r1",
+          "anli_r2",
+          "anli_r3",
+          "arc_challenge",
+          "banking77",
+          "boolq",
+          "clinc150",
+          "contractnli",
+          "mmlu",
+          "ragtruth",
+          "sst5",
+          "when2call"
+        ]
+      },
+      "result_lines_read": 2400,
+      "result_lines_outside_unit_ignored": 0
+    },
+    "gguf-bf16-r2": {
+      "engine | engine_version | batch_size (distinct values on the unit)": [
+        "llama.cpp | b11671-ba3c05f71 | batch_size=None"
+      ],
+      "tasks_by_value": {
+        "llama.cpp | b11671-ba3c05f71 | batch_size=None": [
+          "anli_r1",
+          "anli_r2",
+          "anli_r3",
+          "arc_challenge",
+          "banking77",
+          "boolq",
+          "clinc150",
+          "contractnli",
+          "mmlu",
+          "ragtruth",
+          "sst5",
+          "when2call"
+        ]
+      },
+      "result_lines_read": 2400,
+      "result_lines_outside_unit_ignored": 0
+    }
+  },
+  "groups": {
+    "restart_vllm": [
+      "bf16-srv|bf16-srv-r2",
+      "fp8|fp8-r2",
+      "nvfp4|nvfp4-r2"
+    ],
+    "restart_llamacpp": [
+      "gguf-bf16|gguf-bf16-r2"
+    ],
+    "native_rerun_bs8": [
+      "ref|ref-r2"
+    ],
+    "kernel": [
+      "ref|ref-fla"
+    ],
+    "engine_bf16": [
+      "ref|bf16-srv",
+      "ref|gguf-bf16"
+    ],
+    "quant_within_engine": [
+      "bf16-srv|fp8",
+      "bf16-srv|nvfp4",
+      "gguf-bf16|q8_0",
+      "gguf-bf16|q4_k_m"
+    ],
+    "vs_ref": [
+      "ref|bf16-srv",
+      "ref|fp8",
+      "ref|nvfp4",
+      "ref|gguf-bf16",
+      "ref|q8_0",
+      "ref|q4_k_m",
+      "ref|ref-r2",
+      "ref|ref-fla",
+      "ref|bf16-srv-r2",
+      "ref|fp8-r2",
+      "ref|nvfp4-r2",
+      "ref|gguf-bf16-r2"
+    ]
+  },
+  "pairs": {
+    "bf16-srv|bf16-srv-r2": {
+      "a": "bf16-srv",
+      "b": "bf16-srv-r2",
+      "label": "vLLM restart, BF16",
+      "group": "restart_vllm",
+      "n_questions": 2400,
+      "n_records": 2400,
+      "flips": 4,
+      "flip_rate": 0.0016666666666666668,
+      "flip_ci95": [
+        0.0004166666666666667,
+        0.0033333333333333335
+      ],
+      "flip_ci95_exact_cp": [
+        0.0004542914074727406,
+        0.004261782418894524
+      ],
+      "tvd_mean": 0.002566529682881835,
+      "tvd_ci95": [
+        0.0023430829984665376,
+        0.0028238205515993546
+      ],
+      "max_dprob": 0.13430953738598328,
+      "max_dprob_at": {
+        "task": "clinc150",
+        "id": "clinc150-19"
+      },
+      "identical_basis": "logits",
+      "n_identical_records": 161,
+      "share_identical": 0.06708333333333333,
+      "share_identical_ci95": [
+        0.0575,
+        0.07709374999999995
+      ],
+      "flips_by_task": {
+        "anli_r1": 0,
+        "anli_r2": 0,
+        "anli_r3": 2,
+        "arc_challenge": 0,
+        "banking77": 0,
+        "boolq": 0,
+        "clinc150": 0,
+        "contractnli": 0,
+        "mmlu": 0,
+        "ragtruth": 1,
+        "sst5": 0,
+        "when2call": 1
+      },
+      "share_identical_by_task": {
+        "anli_r1": 0.04,
+        "anli_r2": 0.015,
+        "anli_r3": 0.01,
+        "arc_challenge": 0.17,
+        "banking77": 0.0,
+        "boolq": 0.255,
+        "clinc150": 0.0,
+        "contractnli": 0.05,
+        "mmlu": 0.12,
+        "ragtruth": 0.065,
+        "sst5": 0.025,
+        "when2call": 0.055
+      },
+      "max_dlogit_raw": 0.53125,
+      "max_dlogit_centered": 0.4976200331125828
+    },
+    "fp8|fp8-r2": {
+      "a": "fp8",
+      "b": "fp8-r2",
+      "label": "vLLM restart, FP8",
+      "group": "restart_vllm",
+      "n_questions": 2400,
+      "n_records": 2400,
+      "flips": 0,
+      "flip_rate": 0.0,
+      "flip_ci95": [
+        0.0,
+        0.0
+      ],
+      "flip_ci95_exact_cp": [
+        0.0,
+        0.0015358524754633355
+      ],
+      "tvd_mean": 0.0005540602877044795,
+      "tvd_ci95": [
+        0.000364949791953225,
+        0.0007824367400622627
+      ],
+      "max_dprob": 0.11701449292164268,
+      "max_dprob_at": {
+        "task": "contractnli",
+        "id": "contractnli-193"
+      },
+      "identical_basis": "logits",
+      "n_identical_records": 2288,
+      "share_identical": 0.9533333333333334,
+      "share_identical_ci95": [
+        0.9445833333333333,
+        0.96125
+      ],
+      "flips_by_task": {
+        "anli_r1": 0,
+        "anli_r2": 0,
+        "anli_r3": 0,
+        "arc_challenge": 0,
+        "banking77": 0,
+        "boolq": 0,
+        "clinc150": 0,
+        "contractnli": 0,
+        "mmlu": 0,
+        "ragtruth": 0,
+        "sst5": 0,
+        "when2call": 0
+      },
+      "share_identical_by_task": {
+        "anli_r1": 0.99,
+        "anli_r2": 0.99,
+        "anli_r3": 0.99,
+        "arc_challenge": 0.99,
+        "banking77": 0.99,
+        "boolq": 1.0,
+        "clinc150": 0.665,
+        "contractnli": 0.87,
+        "mmlu": 0.99,
+        "ragtruth": 0.985,
+        "sst5": 0.99,
+        "when2call": 0.99
+      },
+      "max_dlogit_raw": 0.46875,
+      "max_dlogit_centered": 0.3876953125
+    },
+    "nvfp4|nvfp4-r2": {
+      "a": "nvfp4",
+      "b": "nvfp4-r2",
+      "label": "vLLM restart, NVFP4",
+      "group": "restart_vllm",
+      "n_questions": 2400,
+      "n_records": 2400,
+      "flips": 22,
+      "flip_rate": 0.009166666666666667,
+      "flip_ci95": [
+        0.005416666666666667,
+        0.013333333333333334
+      ],
+      "flip_ci95_exact_cp": [
+        0.005753362885167154,
+        0.013845728101353379
+      ],
+      "tvd_mean": 0.007097051010650914,
+      "tvd_ci95": [
+        0.005813020207347888,
+        0.008562688727406653
+      ],
+      "max_dprob": 0.5891399380596143,
+      "max_dprob_at": {
+        "task": "anli_r1",
+        "id": "anli_r1-105"
+      },
+      "identical_basis": "logits",
+      "n_identical_records": 2087,
+      "share_identical": 0.8695833333333334,
+      "share_identical_ci95": [
+        0.85625,
+        0.8829166666666667
+      ],
+      "flips_by_task": {
+        "anli_r1": 9,
+        "anli_r2": 10,
+        "anli_r3": 0,
+        "arc_challenge": 0,
+        "banking77": 0,
+        "boolq": 0,
+        "clinc150": 0,
+        "contractnli": 1,
+        "mmlu": 0,
+        "ragtruth": 1,
+        "sst5": 0,
+        "when2call": 1
+      },
+      "share_identical_by_task": {
+        "anli_r1": 0.44,
+        "anli_r2": 0.485,
+        "anli_r3": 0.985,
+        "arc_challenge": 1.0,
+        "banking77": 0.975,
+        "boolq": 1.0,
+        "clinc150": 0.63,
+        "contractnli": 0.99,
+        "mmlu": 0.985,
+        "ragtruth": 0.97,
+        "sst5": 0.99,
+        "when2call": 0.985
+      },
+      "max_dlogit_raw": 1.85546875,
+      "max_dlogit_centered": 2.0598958333333335
+    },
+    "gguf-bf16|gguf-bf16-r2": {
+      "a": "gguf-bf16",
+      "b": "gguf-bf16-r2",
+      "label": "llama.cpp restart, BF16 (N5)",
+      "group": "restart_llamacpp",
+      "n_questions": 2400,
+      "n_records": 2400,
+      "flips": 0,
+      "flip_rate": 0.0,
+      "flip_ci95": [
+        0.0,
+        0.0
+      ],
+      "flip_ci95_exact_cp": [
+        0.0,
+        0.0015358524754633355
+      ],
+      "tvd_mean": 0.0,
+      "tvd_ci95": [
+        0.0,
+        0.0
+      ],
+      "max_dprob": 0.0,
+      "max_dprob_at": {
+        "task": "anli_r1",
+        "id": "anli_r1-0"
+      },
+      "identical_basis": "probs",
+      "n_identical_records": 2400,
+      "share_identical": 1.0,
+      "share_identical_ci95": [
+        1.0,
+        1.0
+      ],
+      "flips_by_task": {
+        "anli_r1": 0,
+        "anli_r2": 0,
+        "anli_r3": 0,
+        "arc_challenge": 0,
+        "banking77": 0,
+        "boolq": 0,
+        "clinc150": 0,
+        "contractnli": 0,
+        "mmlu": 0,
+        "ragtruth": 0,
+        "sst5": 0,
+        "when2call": 0
+      },
+      "share_identical_by_task": {
+        "anli_r1": 1.0,
+        "anli_r2": 1.0,
+        "anli_r3": 1.0,
+        "arc_challenge": 1.0,
+        "banking77": 1.0,
+        "boolq": 1.0,
+        "clinc150": 1.0,
+        "contractnli": 1.0,
+        "mmlu": 1.0,
+        "ragtruth": 1.0,
+        "sst5": 1.0,
+        "when2call": 1.0
+      },
+      "max_dlogit_raw": null,
+      "max_dlogit_centered": null
+    },
+    "ref|ref-r2": {
+      "a": "ref",
+      "b": "ref-r2",
+      "label": "native rerun at batch 8 vs batch 1 (a rerun AND a batch-size change, not a pure restart)",
+      "group": "native_rerun_bs8",
+      "n_questions": 2400,
+      "n_records": 2400,
+      "flips": 15,
+      "flip_rate": 0.00625,
+      "flip_ci95": [
+        0.0033333333333333335,
+        0.009583333333333333
+      ],
+      "flip_ci95_exact_cp": [
+        0.0035021718850165753,
+        0.01028750435436957
+      ],
+      "tvd_mean": 0.004910257128041104,
+      "tvd_ci95": [
+        0.0045065443807302,
+        0.005358809268559032
+      ],
+      "max_dprob": 0.21398858876982735,
+      "max_dprob_at": {
+        "task": "anli_r3",
+        "id": "anli_r3-154"
+      },
+      "identical_basis": "logits",
+      "n_identical_records": 62,
+      "share_identical": 0.025833333333333333,
+      "share_identical_ci95": [
+        0.019583333333333335,
+        0.0325
+      ],
+      "flips_by_task": {
+        "anli_r1": 0,
+        "anli_r2": 2,
+        "anli_r3": 6,
+        "arc_challenge": 0,
+        "banking77": 1,
+        "boolq": 0,
+        "clinc150": 0,
+        "contractnli": 2,
+        "mmlu": 1,
+        "ragtruth": 0,
+        "sst5": 2,
+        "when2call": 1
+      },
+      "share_identical_by_task": {
+        "anli_r1": 0.015,
+        "anli_r2": 0.015,
+        "anli_r3": 0.01,
+        "arc_challenge": 0.055,
+        "banking77": 0.0,
+        "boolq": 0.145,
+        "clinc150": 0.0,
+        "contractnli": 0.01,
+        "mmlu": 0.025,
+        "ragtruth": 0.01,
+        "sst5": 0.0,
+        "when2call": 0.025
+      },
+      "max_dlogit_raw": 1.00390625,
+      "max_dlogit_centered": 0.8181394867549668
+    },
+    "ref|ref-fla": {
+      "a": "ref",
+      "b": "ref-fla",
+      "label": "Gated DeltaNet kernel: PyTorch fallback vs flash-linear-attention (N4)",
+      "group": "kernel",
+      "n_questions": 2400,
+      "n_records": 2400,
+      "flips": 14,
+      "flip_rate": 0.005833333333333334,
+      "flip_ci95": [
+        0.002916666666666667,
+        0.00875
+      ],
+      "flip_ci95_exact_cp": [
+        0.0031926976352512223,
+        0.00976799174737716
+      ],
+      "tvd_mean": 0.005209167115729043,
+      "tvd_ci95": [
+        0.004812196851829745,
+        0.005645919425040009
+      ],
+      "max_dprob": 0.18677780488915768,
+      "max_dprob_at": {
+        "task": "anli_r3",
+        "id": "anli_r3-154"
+      },
+      "identical_basis": "logits",
+      "n_identical_records": 48,
+      "share_identical": 0.02,
+      "share_identical_ci95": [
+        0.014583333333333334,
+        0.025833333333333333
+      ],
+      "flips_by_task": {
+        "anli_r1": 0,
+        "anli_r2": 2,
+        "anli_r3": 6,
+        "arc_challenge": 0,
+        "banking77": 0,
+        "boolq": 0,
+        "clinc150": 0,
+        "contractnli": 1,
+        "mmlu": 1,
+        "ragtruth": 1,
+        "sst5": 3,
+        "when2call": 0
+      },
+      "share_identical_by_task": {
+        "anli_r1": 0.01,
+        "anli_r2": 0.005,
+        "anli_r3": 0.0,
+        "arc_challenge": 0.05,
+        "banking77": 0.0,
+        "boolq": 0.11,
+        "clinc150": 0.0,
+        "contractnli": 0.005,
+        "mmlu": 0.015,
+        "ragtruth": 0.015,
+        "sst5": 0.0,
+        "when2call": 0.03
+      },
+      "max_dlogit_raw": 1.68359375,
+      "max_dlogit_centered": 0.8466796875
+    },
+    "ref|bf16-srv": {
+      "a": "ref",
+      "b": "bf16-srv",
+      "label": "engine at BF16: transformers -> vLLM (N3)",
+      "group": "engine_bf16",
+      "n_questions": 2400,
+      "n_records": 2400,
+      "flips": 13,
+      "flip_rate": 0.005416666666666667,
+      "flip_ci95": [
+        0.0025,
+        0.008333333333333333
+      ],
+      "flip_ci95_exact_cp": [
+        0.0028872045719820997,
+        0.009244853298204531
+      ],
+      "tvd_mean": 0.006099295943463244,
+      "tvd_ci95": [
+        0.005646816923288278,
+        0.006587968221269146
+      ],
+      "max_dprob": 0.1900810698004886,
+      "max_dprob_at": {
+        "task": "anli_r3",
+        "id": "anli_r3-154"
+      },
+      "identical_basis": "logits",
+      "n_identical_records": 51,
+      "share_identical": 0.02125,
+      "share_identical_ci95": [
+        0.015833333333333335,
+        0.027083333333333334
+      ],
+      "flips_by_task": {
+        "anli_r1": 0,
+        "anli_r2": 2,
+        "anli_r3": 6,
+        "arc_challenge": 0,
+        "banking77": 0,
+        "boolq": 0,
+        "clinc150": 0,
+        "contractnli": 2,
+        "mmlu": 1,
+        "ragtruth": 1,
+        "sst5": 1,
+        "when2call": 0
+      },
+      "share_identical_by_task": {
+        "anli_r1": 0.0,
+        "anli_r2": 0.01,
+        "anli_r3": 0.01,
+        "arc_challenge": 0.035,
+        "banking77": 0.0,
+        "boolq": 0.115,
+        "clinc150": 0.0,
+        "contractnli": 0.005,
+        "mmlu": 0.035,
+        "ragtruth": 0.03,
+        "sst5": 0.0,
+        "when2call": 0.015
+      },
+      "max_dlogit_raw": 1.03125,
+      "max_dlogit_centered": 0.6080298013245033
+    },
+    "ref|gguf-bf16": {
+      "a": "ref",
+      "b": "gguf-bf16",
+      "label": "engine at BF16: transformers -> llama.cpp (N3)",
+      "group": "engine_bf16",
+      "n_questions": 2400,
+      "n_records": 2400,
+      "flips": 16,
+      "flip_rate": 0.006666666666666667,
+      "flip_ci95": [
+        0.0033333333333333335,
+        0.01
+      ],
+      "flip_ci95_exact_cp": [
+        0.0038152357376575463,
+        0.01080372880453756
+      ],
+      "tvd_mean": 0.005133247669236087,
+      "tvd_ci95": [
+        0.004729535697181432,
+        0.005563205617604736
+      ],
+      "max_dprob": 0.17536489741694977,
+      "max_dprob_at": {
+        "task": "anli_r3",
+        "id": "anli_r3-154"
+      },
+      "identical_basis": "probs",
+      "n_identical_records": 0,
+      "share_identical": 0.0,
+      "share_identical_ci95": [
+        0.0,
+        0.0
+      ],
+      "flips_by_task": {
+        "anli_r1": 0,
+        "anli_r2": 2,
+        "anli_r3": 7,
+        "arc_challenge": 0,
+        "banking77": 0,
+        "boolq": 0,
+        "clinc150": 0,
+        "contractnli": 2,
+        "mmlu": 1,
+        "ragtruth": 1,
+        "sst5": 2,
+        "when2call": 1
+      },
+      "share_identical_by_task": {
+        "anli_r1": 0.0,
+        "anli_r2": 0.0,
+        "anli_r3": 0.0,
+        "arc_challenge": 0.0,
+        "banking77": 0.0,
+        "boolq": 0.0,
+        "clinc150": 0.0,
+        "contractnli": 0.0,
+        "mmlu": 0.0,
+        "ragtruth": 0.0,
+        "sst5": 0.0,
+        "when2call": 0.0
+      },
+      "max_dlogit_raw": null,
+      "max_dlogit_centered": null
+    },
+    "bf16-srv|fp8": {
+      "a": "bf16-srv",
+      "b": "fp8",
+      "label": "FP8 vs BF16 inside vLLM (N1)",
+      "group": "quant_within_engine",
+      "n_questions": 2400,
+      "n_records": 2400,
+      "flips": 39,
+      "flip_rate": 0.01625,
+      "flip_ci95": [
+        0.01125,
+        0.02125
+      ],
+      "flip_ci95_exact_cp": [
+        0.011580195993452386,
+        0.022147912595010946
+      ],
+      "tvd_mean": 0.018806016832610743,
+      "tvd_ci95": [
+        0.01748749861885431,
+        0.020234847884850558
+      ],
+      "max_dprob": 0.5596984805137767,
+      "max_dprob_at": {
+        "task": "ragtruth",
+        "id": "ragtruth-185"
+      },
+      "identical_basis": "logits",
+      "n_identical_records": 1,
+      "share_identical": 0.0004166666666666667,
+      "share_identical_ci95": [
+        0.0,
+        0.00125
+      ],
+      "flips_by_task": {
+        "anli_r1": 2,
+        "anli_r2": 6,
+        "anli_r3": 10,
+        "arc_challenge": 1,
+        "banking77": 0,
+        "boolq": 0,
+        "clinc150": 0,
+        "contractnli": 3,
+        "mmlu": 4,
+        "ragtruth": 8,
+        "sst5": 3,
+        "when2call": 2
+      },
+      "share_identical_by_task": {
+        "anli_r1": 0.0,
+        "anli_r2": 0.0,
+        "anli_r3": 0.0,
+        "arc_challenge": 0.0,
+        "banking77": 0.0,
+        "boolq": 0.005,
+        "clinc150": 0.0,
+        "contractnli": 0.0,
+        "mmlu": 0.0,
+        "ragtruth": 0.0,
+        "sst5": 0.0,
+        "when2call": 0.0
+      },
+      "max_dlogit_raw": 1.87890625,
+      "max_dlogit_centered": 1.373046875
+    },
+    "bf16-srv|nvfp4": {
+      "a": "bf16-srv",
+      "b": "nvfp4",
+      "label": "NVFP4 vs BF16 inside vLLM (N2)",
+      "group": "quant_within_engine",
+      "n_questions": 2400,
+      "n_records": 2400,
+      "flips": 136,
+      "flip_rate": 0.056666666666666664,
+      "flip_ci95": [
+        0.04791666666666667,
+        0.06583333333333333
+      ],
+      "flip_ci95_exact_cp": [
+        0.047754205896295095,
+        0.06667928422792152
+      ],
+      "tvd_mean": 0.05449604442715279,
+      "tvd_ci95": [
+        0.05103905258294568,
+        0.05792861361277835
+      ],
+      "max_dprob": 0.6282708414350648,
+      "max_dprob_at": {
+        "task": "anli_r1",
+        "id": "anli_r1-55"
+      },
+      "identical_basis": "logits",
+      "n_identical_records": 0,
+      "share_identical": 0.0,
+      "share_identical_ci95": [
+        0.0,
+        0.0
+      ],
+      "flips_by_task": {
+        "anli_r1": 18,
+        "anli_r2": 25,
+        "anli_r3": 29,
+        "arc_challenge": 2,
+        "banking77": 1,
+        "boolq": 5,
+        "clinc150": 1,
+        "contractnli": 9,
+        "mmlu": 11,
+        "ragtruth": 19,
+        "sst5": 9,
+        "when2call": 7
+      },
+      "share_identical_by_task": {
+        "anli_r1": 0.0,
+        "anli_r2": 0.0,
+        "anli_r3": 0.0,
+        "arc_challenge": 0.0,
+        "banking77": 0.0,
+        "boolq": 0.0,
+        "clinc150": 0.0,
+        "contractnli": 0.0,
+        "mmlu": 0.0,
+        "ragtruth": 0.0,
+        "sst5": 0.0,
+        "when2call": 0.0
+      },
+      "max_dlogit_raw": 3.703125,
+      "max_dlogit_centered": 2.6298828125
+    },
+    "gguf-bf16|q8_0": {
+      "a": "gguf-bf16",
+      "b": "q8_0",
+      "label": "Q8_0 vs BF16 inside llama.cpp (N3 8-bit)",
+      "group": "quant_within_engine",
+      "n_questions": 2400,
+      "n_records": 2400,
+      "flips": 25,
+      "flip_rate": 0.010416666666666666,
+      "flip_ci95": [
+        0.006666666666666667,
+        0.014583333333333334
+      ],
+      "flip_ci95_exact_cp": [
+        0.0067521436525550494,
+        0.015338885829433591
+      ],
+      "tvd_mean": 0.008455470444112,
+      "tvd_ci95": [
+        0.007771023871157388,
+        0.009247565663596746
+      ],
+      "max_dprob": 0.3521126331315281,
+      "max_dprob_at": {
+        "task": "contractnli",
+        "id": "contractnli-6"
+      },
+      "identical_basis": "probs",
+      "n_identical_records": 0,
+      "share_identical": 0.0,
+      "share_identical_ci95": [
+        0.0,
+        0.0
+      ],
+      "flips_by_task": {
+        "anli_r1": 3,
+        "anli_r2": 5,
+        "anli_r3": 9,
+        "arc_challenge": 0,
+        "banking77": 1,
+        "boolq": 0,
+        "clinc150": 1,
+        "contractnli": 1,
+        "mmlu": 0,
+        "ragtruth": 2,
+        "sst5": 2,
+        "when2call": 1
+      },
+      "share_identical_by_task": {
+        "anli_r1": 0.0,
+        "anli_r2": 0.0,
+        "anli_r3": 0.0,
+        "arc_challenge": 0.0,
+        "banking77": 0.0,
+        "boolq": 0.0,
+        "clinc150": 0.0,
+        "contractnli": 0.0,
+        "mmlu": 0.0,
+        "ragtruth": 0.0,
+        "sst5": 0.0,
+        "when2call": 0.0
+      },
+      "max_dlogit_raw": null,
+      "max_dlogit_centered": null
+    },
+    "gguf-bf16|q4_k_m": {
+      "a": "gguf-bf16",
+      "b": "q4_k_m",
+      "label": "Q4_K_M vs BF16 inside llama.cpp (N2)",
+      "group": "quant_within_engine",
+      "n_questions": 2400,
+      "n_records": 2400,
+      "flips": 84,
+      "flip_rate": 0.035,
+      "flip_ci95": [
+        0.027916666666666666,
+        0.042916666666666665
+      ],
+      "flip_ci95_exact_cp": [
+        0.028011482603663228,
+        0.04315080516427044
+      ],
+      "tvd_mean": 0.03696747016782957,
+      "tvd_ci95": [
+        0.03436250812972335,
+        0.039452745484716265
+      ],
+      "max_dprob": 0.6291613154452185,
+      "max_dprob_at": {
+        "task": "arc_challenge",
+        "id": "arc_challenge-27"
+      },
+      "identical_basis": "probs",
+      "n_identical_records": 0,
+      "share_identical": 0.0,
+      "share_identical_ci95": [
+        0.0,
+        0.0
+      ],
+      "flips_by_task": {
+        "anli_r1": 16,
+        "anli_r2": 10,
+        "anli_r3": 16,
+        "arc_challenge": 1,
+        "banking77": 2,
+        "boolq": 1,
+        "clinc150": 0,
+        "contractnli": 6,
+        "mmlu": 6,
+        "ragtruth": 12,
+        "sst5": 7,
+        "when2call": 7
+      },
+      "share_identical_by_task": {
+        "anli_r1": 0.0,
+        "anli_r2": 0.0,
+        "anli_r3": 0.0,
+        "arc_challenge": 0.0,
+        "banking77": 0.0,
+        "boolq": 0.0,
+        "clinc150": 0.0,
+        "contractnli": 0.0,
+        "mmlu": 0.0,
+        "ragtruth": 0.0,
+        "sst5": 0.0,
+        "when2call": 0.0
+      },
+      "max_dlogit_raw": null,
+      "max_dlogit_centered": null
+    },
+    "ref|fp8": {
+      "a": "ref",
+      "b": "fp8",
+      "label": "fp8 vs ref (for completeness)",
+      "group": "vs_ref",
+      "n_questions": 2400,
+      "n_records": 2400,
+      "flips": 33,
+      "flip_rate": 0.01375,
+      "flip_ci95": [
+        0.009166666666666667,
+        0.018333333333333333
+      ],
+      "flip_ci95_exact_cp": [
+        0.009483264232490443,
+        0.019256352461387283
+      ],
+      "tvd_mean": 0.019064711435621207,
+      "tvd_ci95": [
+        0.017681214248161357,
+        0.020608688114430493
+      ],
+      "max_dprob": 0.46841239285562214,
+      "max_dprob_at": {
+        "task": "ragtruth",
+        "id": "ragtruth-185"
+      },
+      "identical_basis": "logits",
+      "n_identical_records": 1,
+      "share_identical": 0.0004166666666666667,
+      "share_identical_ci95": [
+        0.0,
+        0.00125
+      ],
+      "flips_by_task": {
+        "anli_r1": 2,
+        "anli_r2": 5,
+        "anli_r3": 8,
+        "arc_challenge": 1,
+        "banking77": 0,
+        "boolq": 0,
+        "clinc150": 0,
+        "contractnli": 1,
+        "mmlu": 3,
+        "ragtruth": 7,
+        "sst5": 4,
+        "when2call": 2
+      },
+      "share_identical_by_task": {
+        "anli_r1": 0.0,
+        "anli_r2": 0.0,
+        "anli_r3": 0.0,
+        "arc_challenge": 0.0,
+        "banking77": 0.0,
+        "boolq": 0.005,
+        "clinc150": 0.0,
+        "contractnli": 0.0,
+        "mmlu": 0.0,
+        "ragtruth": 0.0,
+        "sst5": 0.0,
+        "when2call": 0.0
+      },
+      "max_dlogit_raw": 1.97265625,
+      "max_dlogit_centered": 1.3359375
+    },
+    "ref|nvfp4": {
+      "a": "ref",
+      "b": "nvfp4",
+      "label": "nvfp4 vs ref (for completeness)",
+      "group": "vs_ref",
+      "n_questions": 2400,
+      "n_records": 2400,
+      "flips": 137,
+      "flip_rate": 0.05708333333333333,
+      "flip_ci95": [
+        0.04833333333333333,
+        0.06625
+      ],
+      "flip_ci95_exact_cp": [
+        0.04813847275908678,
+        0.06712721016525874
+      ],
+      "tvd_mean": 0.05488156542946373,
+      "tvd_ci95": [
+        0.05145767919666411,
+        0.05841364108738291
+      ],
+      "max_dprob": 0.6176406779779152,
+      "max_dprob_at": {
+        "task": "mmlu",
+        "id": "mmlu-106"
+      },
+      "identical_basis": "logits",
+      "n_identical_records": 0,
+      "share_identical": 0.0,
+      "share_identical_ci95": [
+        0.0,
+        0.0
+      ],
+      "flips_by_task": {
+        "anli_r1": 18,
+        "anli_r2": 25,
+        "anli_r3": 29,
+        "arc_challenge": 2,
+        "banking77": 1,
+        "boolq": 5,
+        "clinc150": 1,
+        "contractnli": 11,
+        "mmlu": 12,
+        "ragtruth": 18,
+        "sst5": 8,
+        "when2call": 7
+      },
+      "share_identical_by_task": {
+        "anli_r1": 0.0,
+        "anli_r2": 0.0,
+        "anli_r3": 0.0,
+        "arc_challenge": 0.0,
+        "banking77": 0.0,
+        "boolq": 0.0,
+        "clinc150": 0.0,
+        "contractnli": 0.0,
+        "mmlu": 0.0,
+        "ragtruth": 0.0,
+        "sst5": 0.0,
+        "when2call": 0.0
+      },
+      "max_dlogit_raw": 3.578125,
+      "max_dlogit_centered": 2.5791015625
+    },
+    "ref|q8_0": {
+      "a": "ref",
+      "b": "q8_0",
+      "label": "q8_0 vs ref (for completeness)",
+      "group": "vs_ref",
+      "n_questions": 2400,
+      "n_records": 2400,
+      "flips": 23,
+      "flip_rate": 0.009583333333333333,
+      "flip_ci95": [
+        0.005833333333333334,
+        0.013333333333333334
+      ],
+      "flip_ci95_exact_cp": [
+        0.006084435484721391,
+        0.014345197264158937
+      ],
+      "tvd_mean": 0.009394295402236694,
+      "tvd_ci95": [
+        0.008588441418709838,
+        0.010275358240591316
+      ],
+      "max_dprob": 0.33066688795612625,
+      "max_dprob_at": {
+        "task": "contractnli",
+        "id": "contractnli-6"
+      },
+      "identical_basis": "probs",
+      "n_identical_records": 0,
+      "share_identical": 0.0,
+      "share_identical_ci95": [
+        0.0,
+        0.0
+      ],
+      "flips_by_task": {
+        "anli_r1": 3,
+        "anli_r2": 5,
+        "anli_r3": 6,
+        "arc_challenge": 0,
+        "banking77": 1,
+        "boolq": 0,
+        "clinc150": 1,
+        "contractnli": 3,
+        "mmlu": 1,
+        "ragtruth": 1,
+        "sst5": 2,
+        "when2call": 0
+      },
+      "share_identical_by_task": {
+        "anli_r1": 0.0,
+        "anli_r2": 0.0,
+        "anli_r3": 0.0,
+        "arc_challenge": 0.0,
+        "banking77": 0.0,
+        "boolq": 0.0,
+        "clinc150": 0.0,
+        "contractnli": 0.0,
+        "mmlu": 0.0,
+        "ragtruth": 0.0,
+        "sst5": 0.0,
+        "when2call": 0.0
+      },
+      "max_dlogit_raw": null,
+      "max_dlogit_centered": null
+    },
+    "ref|q4_k_m": {
+      "a": "ref",
+      "b": "q4_k_m",
+      "label": "q4_k_m vs ref (for completeness)",
+      "group": "vs_ref",
+      "n_questions": 2400,
+      "n_records": 2400,
+      "flips": 84,
+      "flip_rate": 0.035,
+      "flip_ci95": [
+        0.027916666666666666,
+        0.04251041666666661
+      ],
+      "flip_ci95_exact_cp": [
+        0.028011482603663228,
+        0.04315080516427044
+      ],
+      "tvd_mean": 0.03702799437092068,
+      "tvd_ci95": [
+        0.034422078743355546,
+        0.03960031612966017
+      ],
+      "max_dprob": 0.6240701823658752,
+      "max_dprob_at": {
+        "task": "arc_challenge",
+        "id": "arc_challenge-27"
+      },
+      "identical_basis": "probs",
+      "n_identical_records": 0,
+      "share_identical": 0.0,
+      "share_identical_ci95": [
+        0.0,
+        0.0
+      ],
+      "flips_by_task": {
+        "anli_r1": 16,
+        "anli_r2": 10,
+        "anli_r3": 13,
+        "arc_challenge": 1,
+        "banking77": 2,
+        "boolq": 1,
+        "clinc150": 0,
+        "contractnli": 6,
+        "mmlu": 7,
+        "ragtruth": 13,
+        "sst5": 7,
+        "when2call": 8
+      },
+      "share_identical_by_task": {
+        "anli_r1": 0.0,
+        "anli_r2": 0.0,
+        "anli_r3": 0.0,
+        "arc_challenge": 0.0,
+        "banking77": 0.0,
+        "boolq": 0.0,
+        "clinc150": 0.0,
+        "contractnli": 0.0,
+        "mmlu": 0.0,
+        "ragtruth": 0.0,
+        "sst5": 0.0,
+        "when2call": 0.0
+      },
+      "max_dlogit_raw": null,
+      "max_dlogit_centered": null
+    },
+    "ref|bf16-srv-r2": {
+      "a": "ref",
+      "b": "bf16-srv-r2",
+      "label": "bf16-srv-r2 vs ref (for completeness)",
+      "group": "vs_ref",
+      "n_questions": 2400,
+      "n_records": 2400,
+      "flips": 15,
+      "flip_rate": 0.00625,
+      "flip_ci95": [
+        0.0033333333333333335,
+        0.009583333333333333
+      ],
+      "flip_ci95_exact_cp": [
+        0.0035021718850165753,
+        0.01028750435436957
+      ],
+      "tvd_mean": 0.006386894654638923,
+      "tvd_ci95": [
+        0.005915480203337145,
+        0.006920230731938128
+      ],
+      "max_dprob": 0.18092250929132792,
+      "max_dprob_at": {
+        "task": "clinc150",
+        "id": "clinc150-19"
+      },
+      "identical_basis": "logits",
+      "n_identical_records": 48,
+      "share_identical": 0.02,
+      "share_identical_ci95": [
+        0.014583333333333334,
+        0.025427083333333277
+      ],
+      "flips_by_task": {
+        "anli_r1": 0,
+        "anli_r2": 2,
+        "anli_r3": 6,
+        "arc_challenge": 0,
+        "banking77": 0,
+        "boolq": 0,
+        "clinc150": 0,
+        "contractnli": 2,
+        "mmlu": 1,
+        "ragtruth": 2,
+        "sst5": 1,
+        "when2call": 1
+      },
+      "share_identical_by_task": {
+        "anli_r1": 0.005,
+        "anli_r2": 0.0,
+        "anli_r3": 0.005,
+        "arc_challenge": 0.04,
+        "banking77": 0.0,
+        "boolq": 0.13,
+        "clinc150": 0.0,
+        "contractnli": 0.0,
+        "mmlu": 0.035,
+        "ragtruth": 0.01,
+        "sst5": 0.0,
+        "when2call": 0.015
+      },
+      "max_dlogit_raw": 1.27734375,
+      "max_dlogit_centered": 0.8500620860927153
+    },
+    "ref|fp8-r2": {
+      "a": "ref",
+      "b": "fp8-r2",
+      "label": "fp8-r2 vs ref (for completeness)",
+      "group": "vs_ref",
+      "n_questions": 2400,
+      "n_records": 2400,
+      "flips": 33,
+      "flip_rate": 0.01375,
+      "flip_ci95": [
+        0.009166666666666667,
+        0.018333333333333333
+      ],
+      "flip_ci95_exact_cp": [
+        0.009483264232490443,
+        0.019256352461387283
+      ],
+      "tvd_mean": 0.019110221587032163,
+      "tvd_ci95": [
+        0.01774810743413216,
+        0.020627607751079018
+      ],
+      "max_dprob": 0.46841239285562214,
+      "max_dprob_at": {
+        "task": "ragtruth",
+        "id": "ragtruth-185"
+      },
+      "identical_basis": "logits",
+      "n_identical_records": 1,
+      "share_identical": 0.0004166666666666667,
+      "share_identical_ci95": [
+        0.0,
+        0.00125
+      ],
+      "flips_by_task": {
+        "anli_r1": 2,
+        "anli_r2": 5,
+        "anli_r3": 8,
+        "arc_challenge": 1,
+        "banking77": 0,
+        "boolq": 0,
+        "clinc150": 0,
+        "contractnli": 1,
+        "mmlu": 3,
+        "ragtruth": 7,
+        "sst5": 4,
+        "when2call": 2
+      },
+      "share_identical_by_task": {
+        "anli_r1": 0.0,
+        "anli_r2": 0.0,
+        "anli_r3": 0.0,
+        "arc_challenge": 0.0,
+        "banking77": 0.0,
+        "boolq": 0.005,
+        "clinc150": 0.0,
+        "contractnli": 0.0,
+        "mmlu": 0.0,
+        "ragtruth": 0.0,
+        "sst5": 0.0,
+        "when2call": 0.0
+      },
+      "max_dlogit_raw": 1.97265625,
+      "max_dlogit_centered": 1.3359375
+    },
+    "ref|nvfp4-r2": {
+      "a": "ref",
+      "b": "nvfp4-r2",
+      "label": "nvfp4-r2 vs ref (for completeness)",
+      "group": "vs_ref",
+      "n_questions": 2400,
+      "n_records": 2400,
+      "flips": 139,
+      "flip_rate": 0.057916666666666665,
+      "flip_ci95": [
+        0.049166666666666664,
+        0.06708333333333333
+      ],
+      "flip_ci95_exact_cp": [
+        0.04890742263828848,
+        0.0680226499932
+      ],
+      "tvd_mean": 0.054746858266063375,
+      "tvd_ci95": [
+        0.05126725874885621,
+        0.05837222336260577
+      ],
+      "max_dprob": 0.6176406779779152,
+      "max_dprob_at": {
+        "task": "mmlu",
+        "id": "mmlu-106"
+      },
+      "identical_basis": "logits",
+      "n_identical_records": 0,
+      "share_identical": 0.0,
+      "share_identical_ci95": [
+        0.0,
+        0.0
+      ],
+      "flips_by_task": {
+        "anli_r1": 21,
+        "anli_r2": 25,
+        "anli_r3": 29,
+        "arc_challenge": 2,
+        "banking77": 1,
+        "boolq": 5,
+        "clinc150": 1,
+        "contractnli": 12,
+        "mmlu": 12,
+        "ragtruth": 17,
+        "sst5": 8,
+        "when2call": 6
+      },
+      "share_identical_by_task": {
+        "anli_r1": 0.0,
+        "anli_r2": 0.0,
+        "anli_r3": 0.0,
+        "arc_challenge": 0.0,
+        "banking77": 0.0,
+        "boolq": 0.0,
+        "clinc150": 0.0,
+        "contractnli": 0.0,
+        "mmlu": 0.0,
+        "ragtruth": 0.0,
+        "sst5": 0.0,
+        "when2call": 0.0
+      },
+      "max_dlogit_raw": 3.578125,
+      "max_dlogit_centered": 2.5791015625
+    },
+    "ref|gguf-bf16-r2": {
+      "a": "ref",
+      "b": "gguf-bf16-r2",
+      "label": "gguf-bf16-r2 vs ref (for completeness)",
+      "group": "vs_ref",
+      "n_questions": 2400,
+      "n_records": 2400,
+      "flips": 16,
+      "flip_rate": 0.006666666666666667,
+      "flip_ci95": [
+        0.0033333333333333335,
+        0.01
+      ],
+      "flip_ci95_exact_cp": [
+        0.0038152357376575463,
+        0.01080372880453756
+      ],
+      "tvd_mean": 0.005133247669236087,
+      "tvd_ci95": [
+        0.004729535697181432,
+        0.005563205617604736
+      ],
+      "max_dprob": 0.17536489741694977,
+      "max_dprob_at": {
+        "task": "anli_r3",
+        "id": "anli_r3-154"
+      },
+      "identical_basis": "probs",
+      "n_identical_records": 0,
+      "share_identical": 0.0,
+      "share_identical_ci95": [
+        0.0,
+        0.0
+      ],
+      "flips_by_task": {
+        "anli_r1": 0,
+        "anli_r2": 2,
+        "anli_r3": 7,
+        "arc_challenge": 0,
+        "banking77": 0,
+        "boolq": 0,
+        "clinc150": 0,
+        "contractnli": 2,
+        "mmlu": 1,
+        "ragtruth": 1,
+        "sst5": 2,
+        "when2call": 1
+      },
+      "share_identical_by_task": {
+        "anli_r1": 0.0,
+        "anli_r2": 0.0,
+        "anli_r3": 0.0,
+        "arc_challenge": 0.0,
+        "banking77": 0.0,
+        "boolq": 0.0,
+        "clinc150": 0.0,
+        "contractnli": 0.0,
+        "mmlu": 0.0,
+        "ragtruth": 0.0,
+        "sst5": 0.0,
+        "when2call": 0.0
+      },
+      "max_dlogit_raw": null,
+      "max_dlogit_centered": null
+    }
+  },
+  "tests": {
+    "N1": {
+      "minuend": "bf16-srv|fp8",
+      "subtrahend": "bf16-srv|bf16-srv-r2",
+      "flips_minuend": 39,
+      "flips_subtrahend": 4,
+      "diff": 0.014583333333333334,
+      "ci95": [
+        0.009583333333333334,
+        0.019583333333333335
+      ],
+      "excludes_zero": true,
+      "ci95_stratified": [
+        0.009583333333333334,
+        0.02
+      ],
+      "excludes_zero_stratified": true,
+      "lower_gt_zero": true,
+      "upper_lt_zero": false,
+      "criterion": "supported if FP8's flip rate against bf16-srv is NOT significantly larger than the bf16-srv restart flip rate, i.e. the 95% CI of the difference does not lie above 0",
+      "supported": false,
+      "supplementary_not_preregistered": {
+        "note": "FP8 vs BF16 minus FP8 against its own restart (fp8 vs fp8-r2)",
+        "minuend": "bf16-srv|fp8",
+        "subtrahend": "fp8|fp8-r2",
+        "flips_minuend": 39,
+        "flips_subtrahend": 0,
+        "diff": 0.01625,
+        "ci95": [
+          0.01125,
+          0.02125
+        ],
+        "excludes_zero": true,
+        "ci95_stratified": [
+          0.01125,
+          0.02125
+        ],
+        "excludes_zero_stratified": true,
+        "lower_gt_zero": true,
+        "upper_lt_zero": false
+      }
+    },
+    "H1_supplementary_not_preregistered": {
+      "note": "Q8_0 vs BF16 inside llama.cpp minus the llama.cpp restart flip rate (N1's analogue for the GGUF 8-bit build)",
+      "minuend": "gguf-bf16|q8_0",
+      "subtrahend": "gguf-bf16|gguf-bf16-r2",
+      "flips_minuend": 25,
+      "flips_subtrahend": 0,
+      "diff": 0.010416666666666666,
+      "ci95": [
+        0.006666666666666667,
+        0.014583333333333334
+      ],
+      "excludes_zero": true,
+      "ci95_stratified": [
+        0.006666666666666667,
+        0.014583333333333334
+      ],
+      "excludes_zero_stratified": true,
+      "lower_gt_zero": true,
+      "upper_lt_zero": false
+    },
+    "N2": {
+      "criterion": "supported if every quantization flip rate (NVFP4 vs bf16-srv, Q4_K_M vs gguf-bf16) exceeds every non-quantization source with a 95% CI of the difference that excludes 0 (lower bound > 0)",
+      "family_size": 16,
+      "rows": [
+        {
+          "minuend": "bf16-srv|nvfp4",
+          "subtrahend": "bf16-srv|bf16-srv-r2",
+          "flips_minuend": 136,
+          "flips_subtrahend": 4,
+          "diff": 0.055,
+          "ci95": [
+            0.04625,
+            0.06416666666666666
+          ],
+          "excludes_zero": true,
+          "ci95_stratified": [
+            0.04583333333333334,
+            0.06333333333333334
+          ],
+          "excludes_zero_stratified": true,
+          "lower_gt_zero": true,
+          "upper_lt_zero": false,
+          "ci95_bonferroni": [
+            0.04057096354166667,
+            0.06989713541666655
+          ],
+          "bonferroni_k": 16,
+          "lower_gt_zero_bonferroni": true
+        },
+        {
+          "minuend": "bf16-srv|nvfp4",
+          "subtrahend": "fp8|fp8-r2",
+          "flips_minuend": 136,
+          "flips_subtrahend": 0,
+          "diff": 0.056666666666666664,
+          "ci95": [
+            0.04791666666666667,
+            0.06583333333333333
+          ],
+          "excludes_zero": true,
+          "ci95_stratified": [
+            0.047906250000000004,
+            0.06541666666666666
+          ],
+          "excludes_zero_stratified": true,
+          "lower_gt_zero": true,
+          "upper_lt_zero": false,
+          "ci95_bonferroni": [
+            0.04296809895833333,
+            0.07192903645833316
+          ],
+          "bonferroni_k": 16,
+          "lower_gt_zero_bonferroni": true
+        },
+        {
+          "minuend": "bf16-srv|nvfp4",
+          "subtrahend": "nvfp4|nvfp4-r2",
+          "flips_minuend": 136,
+          "flips_subtrahend": 22,
+          "diff": 0.0475,
+          "ci95": [
+            0.03833333333333334,
+            0.05708333333333333
+          ],
+          "excludes_zero": true,
+          "ci95_stratified": [
+            0.03833333333333333,
+            0.056249999999999994
+          ],
+          "excludes_zero_stratified": true,
+          "lower_gt_zero": true,
+          "upper_lt_zero": false,
+          "ci95_bonferroni": [
+            0.034166666666666665,
+            0.06203190104166661
+          ],
+          "bonferroni_k": 16,
+          "lower_gt_zero_bonferroni": true
+        },
+        {
+          "minuend": "bf16-srv|nvfp4",
+          "subtrahend": "gguf-bf16|gguf-bf16-r2",
+          "flips_minuend": 136,
+          "flips_subtrahend": 0,
+          "diff": 0.056666666666666664,
+          "ci95": [
+            0.04791666666666667,
+            0.06583333333333333
+          ],
+          "excludes_zero": true,
+          "ci95_stratified": [
+            0.047906250000000004,
+            0.06541666666666666
+          ],
+          "excludes_zero_stratified": true,
+          "lower_gt_zero": true,
+          "upper_lt_zero": false,
+          "ci95_bonferroni": [
+            0.04296809895833333,
+            0.07192903645833316
+          ],
+          "bonferroni_k": 16,
+          "lower_gt_zero_bonferroni": true
+        },
+        {
+          "minuend": "bf16-srv|nvfp4",
+          "subtrahend": "ref|ref-r2",
+          "flips_minuend": 136,
+          "flips_subtrahend": 15,
+          "diff": 0.050416666666666665,
+          "ci95": [
+            0.04125,
+            0.05999999999999999
+          ],
+          "excludes_zero": true,
+          "ci95_stratified": [
+            0.04125,
+            0.058750000000000004
+          ],
+          "excludes_zero_stratified": true,
+          "lower_gt_zero": true,
+          "upper_lt_zero": false,
+          "ci95_bonferroni": [
+            0.03630143229166667,
+            0.06458333333333334
+          ],
+          "bonferroni_k": 16,
+          "lower_gt_zero_bonferroni": true
+        },
+        {
+          "minuend": "bf16-srv|nvfp4",
+          "subtrahend": "ref|ref-fla",
+          "flips_minuend": 136,
+          "flips_subtrahend": 14,
+          "diff": 0.05083333333333333,
+          "ci95": [
+            0.041666666666666664,
+            0.06
+          ],
+          "excludes_zero": true,
+          "ci95_stratified": [
+            0.042083333333333334,
+            0.05916666666666667
+          ],
+          "excludes_zero_stratified": true,
+          "lower_gt_zero": true,
+          "upper_lt_zero": false,
+          "ci95_bonferroni": [
+            0.03791666666666667,
+            0.06666666666666667
+          ],
+          "bonferroni_k": 16,
+          "lower_gt_zero_bonferroni": true
+        },
+        {
+          "minuend": "bf16-srv|nvfp4",
+          "subtrahend": "ref|bf16-srv",
+          "flips_minuend": 136,
+          "flips_subtrahend": 13,
+          "diff": 0.05125,
+          "ci95": [
+            0.04248958333333333,
+            0.06041666666666667
+          ],
+          "excludes_zero": true,
+          "ci95_stratified": [
+            0.042083333333333334,
+            0.059583333333333335
+          ],
+          "excludes_zero_stratified": true,
+          "lower_gt_zero": true,
+          "upper_lt_zero": false,
+          "ci95_bonferroni": [
+            0.03791666666666667,
+            0.06583333333333334
+          ],
+          "bonferroni_k": 16,
+          "lower_gt_zero_bonferroni": true
+        },
+        {
+          "minuend": "bf16-srv|nvfp4",
+          "subtrahend": "ref|gguf-bf16",
+          "flips_minuend": 136,
+          "flips_subtrahend": 16,
+          "diff": 0.049999999999999996,
+          "ci95": [
+            0.04083333333333333,
+            0.05916666666666667
+          ],
+          "excludes_zero": true,
+          "ci95_stratified": [
+            0.04083333333333333,
+            0.05875
+          ],
+          "excludes_zero_stratified": true,
+          "lower_gt_zero": true,
+          "upper_lt_zero": false,
+          "ci95_bonferroni": [
+            0.035884765625,
+            0.06416666666666668
+          ],
+          "bonferroni_k": 16,
+          "lower_gt_zero_bonferroni": true
+        },
+        {
+          "minuend": "gguf-bf16|q4_k_m",
+          "subtrahend": "bf16-srv|bf16-srv-r2",
+          "flips_minuend": 84,
+          "flips_subtrahend": 4,
+          "diff": 0.03333333333333334,
+          "ci95": [
+            0.02625,
+            0.04083333333333333
+          ],
+          "excludes_zero": true,
+          "ci95_stratified": [
+            0.026250000000000002,
+            0.04083333333333333
+          ],
+          "excludes_zero_stratified": true,
+          "lower_gt_zero": true,
+          "upper_lt_zero": false,
+          "ci95_bonferroni": [
+            0.022134765625,
+            0.045365234374999945
+          ],
+          "bonferroni_k": 16,
+          "lower_gt_zero_bonferroni": true
+        },
+        {
+          "minuend": "gguf-bf16|q4_k_m",
+          "subtrahend": "fp8|fp8-r2",
+          "flips_minuend": 84,
+          "flips_subtrahend": 0,
+          "diff": 0.035,
+          "ci95": [
+            0.027916666666666666,
+            0.042916666666666665
+          ],
+          "excludes_zero": true,
+          "ci95_stratified": [
+            0.027916666666666666,
+            0.0425
+          ],
+          "excludes_zero_stratified": true,
+          "lower_gt_zero": true,
+          "upper_lt_zero": false,
+          "ci95_bonferroni": [
+            0.024583333333333332,
+            0.04708333333333333
+          ],
+          "bonferroni_k": 16,
+          "lower_gt_zero_bonferroni": true
+        },
+        {
+          "minuend": "gguf-bf16|q4_k_m",
+          "subtrahend": "nvfp4|nvfp4-r2",
+          "flips_minuend": 84,
+          "flips_subtrahend": 22,
+          "diff": 0.025833333333333337,
+          "ci95": [
+            0.017916666666666664,
+            0.034583333333333334
+          ],
+          "excludes_zero": true,
+          "ci95_stratified": [
+            0.017916666666666668,
+            0.034166666666666665
+          ],
+          "excludes_zero_stratified": true,
+          "lower_gt_zero": true,
+          "upper_lt_zero": false,
+          "ci95_bonferroni": [
+            0.01301953125,
+            0.03828190104166661
+          ],
+          "bonferroni_k": 16,
+          "lower_gt_zero_bonferroni": true
+        },
+        {
+          "minuend": "gguf-bf16|q4_k_m",
+          "subtrahend": "gguf-bf16|gguf-bf16-r2",
+          "flips_minuend": 84,
+          "flips_subtrahend": 0,
+          "diff": 0.035,
+          "ci95": [
+            0.027916666666666666,
+            0.042916666666666665
+          ],
+          "excludes_zero": true,
+          "ci95_stratified": [
+            0.027916666666666666,
+            0.0425
+          ],
+          "excludes_zero_stratified": true,
+          "lower_gt_zero": true,
+          "upper_lt_zero": false,
+          "ci95_bonferroni": [
+            0.024583333333333332,
+            0.04708333333333333
+          ],
+          "bonferroni_k": 16,
+          "lower_gt_zero_bonferroni": true
+        },
+        {
+          "minuend": "gguf-bf16|q4_k_m",
+          "subtrahend": "ref|ref-r2",
+          "flips_minuend": 84,
+          "flips_subtrahend": 15,
+          "diff": 0.028750000000000005,
+          "ci95": [
+            0.02165625,
+            0.03666666666666667
+          ],
+          "excludes_zero": true,
+          "ci95_stratified": [
+            0.021666666666666667,
+            0.03666666666666667
+          ],
+          "excludes_zero_stratified": true,
+          "lower_gt_zero": true,
+          "upper_lt_zero": false,
+          "ci95_bonferroni": [
+            0.017499999999999998,
+            0.04161523437499994
+          ],
+          "bonferroni_k": 16,
+          "lower_gt_zero_bonferroni": true
+        },
+        {
+          "minuend": "gguf-bf16|q4_k_m",
+          "subtrahend": "ref|ref-fla",
+          "flips_minuend": 84,
+          "flips_subtrahend": 14,
+          "diff": 0.02916666666666667,
+          "ci95": [
+            0.022083333333333333,
+            0.037083333333333336
+          ],
+          "excludes_zero": true,
+          "ci95_stratified": [
+            0.022083333333333333,
+            0.03666666666666667
+          ],
+          "excludes_zero_stratified": true,
+          "lower_gt_zero": true,
+          "upper_lt_zero": false,
+          "ci95_bonferroni": [
+            0.018333333333333333,
+            0.04083333333333333
+          ],
+          "bonferroni_k": 16,
+          "lower_gt_zero_bonferroni": true
+        },
+        {
+          "minuend": "gguf-bf16|q4_k_m",
+          "subtrahend": "ref|bf16-srv",
+          "flips_minuend": 84,
+          "flips_subtrahend": 13,
+          "diff": 0.029583333333333336,
+          "ci95": [
+            0.022083333333333333,
+            0.0375
+          ],
+          "excludes_zero": true,
+          "ci95_stratified": [
+            0.022083333333333333,
+            0.037500000000000006
+          ],
+          "excludes_zero_stratified": true,
+          "lower_gt_zero": true,
+          "upper_lt_zero": false,
+          "ci95_bonferroni": [
+            0.018333333333333333,
+            0.04166666666666667
+          ],
+          "bonferroni_k": 16,
+          "lower_gt_zero_bonferroni": true
+        },
+        {
+          "minuend": "gguf-bf16|q4_k_m",
+          "subtrahend": "ref|gguf-bf16",
+          "flips_minuend": 84,
+          "flips_subtrahend": 16,
+          "diff": 0.028333333333333335,
+          "ci95": [
+            0.021249999999999998,
+            0.03625
+          ],
+          "excludes_zero": true,
+          "ci95_stratified": [
+            0.02125,
+            0.035833333333333335
+          ],
+          "excludes_zero_stratified": true,
+          "lower_gt_zero": true,
+          "upper_lt_zero": false,
+          "ci95_bonferroni": [
+            0.017134765625,
+            0.04041666666666667
+          ],
+          "bonferroni_k": 16,
+          "lower_gt_zero_bonferroni": true
+        }
+      ],
+      "all_lower_gt_zero": true,
+      "all_lower_gt_zero_stratified": true,
+      "all_lower_gt_zero_bonferroni": true,
+      "supported": true,
+      "weakest_row": {
+        "minuend": "gguf-bf16|q4_k_m",
+        "subtrahend": "nvfp4|nvfp4-r2",
+        "flips_minuend": 84,
+        "flips_subtrahend": 22,
+        "diff": 0.025833333333333337,
+        "ci95": [
+          0.017916666666666664,
+          0.034583333333333334
+        ],
+        "excludes_zero": true,
+        "ci95_stratified": [
+          0.017916666666666668,
+          0.034166666666666665
+        ],
+        "excludes_zero_stratified": true,
+        "lower_gt_zero": true,
+        "upper_lt_zero": false,
+        "ci95_bonferroni": [
+          0.01301953125,
+          0.03828190104166661
+        ],
+        "bonferroni_k": 16,
+        "lower_gt_zero_bonferroni": true
+      }
+    },
+    "N3": {
+      "criterion": "supported if each engine change at BF16 flips at least as many decisions as each 8-bit quantization inside one engine: point estimate of (engine - 8-bit) >= 0; contradicted for a combination when the 95% CI of the difference lies below 0",
+      "rows": [
+        {
+          "minuend": "ref|bf16-srv",
+          "subtrahend": "bf16-srv|fp8",
+          "flips_minuend": 13,
+          "flips_subtrahend": 39,
+          "diff": -0.010833333333333334,
+          "ci95": [
+            -0.015416666666666665,
+            -0.00625
+          ],
+          "excludes_zero": true,
+          "ci95_stratified": [
+            -0.015416666666666669,
+            -0.00625
+          ],
+          "excludes_zero_stratified": true,
+          "lower_gt_zero": false,
+          "upper_lt_zero": true
+        },
+        {
+          "minuend": "ref|bf16-srv",
+          "subtrahend": "gguf-bf16|q8_0",
+          "flips_minuend": 13,
+          "flips_subtrahend": 25,
+          "diff": -0.004999999999999999,
+          "ci95": [
+            -0.009166666666666667,
+            -0.0008333333333333344
+          ],
+          "excludes_zero": true,
+          "ci95_stratified": [
+            -0.009166666666666667,
+            -0.0008333333333333335
+          ],
+          "excludes_zero_stratified": true,
+          "lower_gt_zero": false,
+          "upper_lt_zero": true
+        },
+        {
+          "minuend": "ref|gguf-bf16",
+          "subtrahend": "bf16-srv|fp8",
+          "flips_minuend": 16,
+          "flips_subtrahend": 39,
+          "diff": -0.009583333333333333,
+          "ci95": [
+            -0.014583333333333332,
+            -0.005
+          ],
+          "excludes_zero": true,
+          "ci95_stratified": [
+            -0.014166666666666668,
+            -0.004999999999999999
+          ],
+          "excludes_zero_stratified": true,
+          "lower_gt_zero": false,
+          "upper_lt_zero": true
+        },
+        {
+          "minuend": "ref|gguf-bf16",
+          "subtrahend": "gguf-bf16|q8_0",
+          "flips_minuend": 16,
+          "flips_subtrahend": 25,
+          "diff": -0.003749999999999999,
+          "ci95": [
+            -0.007916666666666666,
+            0.0
+          ],
+          "excludes_zero": false,
+          "ci95_stratified": [
+            -0.007500000000000001,
+            0.0
+          ],
+          "excludes_zero_stratified": false,
+          "lower_gt_zero": false,
+          "upper_lt_zero": false
+        }
+      ],
+      "all_point_ge_zero": false,
+      "any_significantly_smaller": true,
+      "supported": false
+    },
+    "N4": {
+      "criterion": "supported if ref-fla flips a nonzero number of decisions against ref AND that count lies within the range of the vLLM restart flip counts (the three measured vLLM restart pairs)",
+      "ref_fla_flips": 14,
+      "ref_fla_flip_rate": 0.005833333333333334,
+      "nonzero": true,
+      "vllm_restart_flips": {
+        "bf16-srv|bf16-srv-r2": 4,
+        "fp8|fp8-r2": 0,
+        "nvfp4|nvfp4-r2": 22
+      },
+      "vllm_restart_range": [
+        0,
+        22
+      ],
+      "within_vllm_restart_range": true,
+      "bf16_only_vllm_restart_flips": 4,
+      "within_bf16_only_range": false,
+      "differences_vs_each_vllm_restart": [
+        {
+          "minuend": "ref|ref-fla",
+          "subtrahend": "bf16-srv|bf16-srv-r2",
+          "flips_minuend": 14,
+          "flips_subtrahend": 4,
+          "diff": 0.004166666666666667,
+          "ci95": [
+            0.0008333333333333335,
+            0.0075
+          ],
+          "excludes_zero": true,
+          "ci95_stratified": [
+            0.0012499999999999998,
+            0.007500000000000001
+          ],
+          "excludes_zero_stratified": true,
+          "lower_gt_zero": true,
+          "upper_lt_zero": false
+        },
+        {
+          "minuend": "ref|ref-fla",
+          "subtrahend": "fp8|fp8-r2",
+          "flips_minuend": 14,
+          "flips_subtrahend": 0,
+          "diff": 0.005833333333333334,
+          "ci95": [
+            0.002916666666666667,
+            0.00875
+          ],
+          "excludes_zero": true,
+          "ci95_stratified": [
+            0.002916666666666667,
+            0.009166666666666667
+          ],
+          "excludes_zero_stratified": true,
+          "lower_gt_zero": true,
+          "upper_lt_zero": false
+        },
+        {
+          "minuend": "ref|ref-fla",
+          "subtrahend": "nvfp4|nvfp4-r2",
+          "flips_minuend": 14,
+          "flips_subtrahend": 22,
+          "diff": -0.003333333333333333,
+          "ci95": [
+            -0.008333333333333333,
+            0.001260416666666611
+          ],
+          "excludes_zero": false,
+          "ci95_stratified": [
+            -0.008333333333333333,
+            0.0016666666666666661
+          ],
+          "excludes_zero_stratified": false,
+          "lower_gt_zero": false,
+          "upper_lt_zero": false
+        }
+      ],
+      "supported": true
+    },
+    "N5": {
+      "criterion": "supported if every record of gguf-bf16 and gguf-bf16-r2 is bit-identical",
+      "identical_basis": "probs",
+      "n_identical_records": 2400,
+      "n_records": 2400,
+      "share_identical": 1.0,
+      "flips": 0,
+      "max_dprob": 0.0,
+      "tvd_mean": 0.0,
+      "supported": true
+    }
+  }
+}

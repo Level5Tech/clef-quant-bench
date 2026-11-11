@@ -1,0 +1,8 @@
+default_stage:
+  default_modifiers:
+    QuantizationModifier:
+      targets: [Linear]
+      ignore: [lm_head, 're:.*visual.*', 're:.*linear_attn.in_proj_a$', 're:.*linear_attn.in_proj_b$']
+      scheme: NVFP4
+      bypass_divisibility_checks: false
+      requires_calibration_data: true

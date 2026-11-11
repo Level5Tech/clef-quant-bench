@@ -1,0 +1,371 @@
+{
+  "model": "clef",
+  "config": "q4_k_m",
+  "engine": "llama.cpp",
+  "engine_version": "b11671-ba3c05f71",
+  "batch_size": 1,
+  "concurrency": 1,
+  "timing": "HTTP round trip to localhost (includes server-side tokenisation and encoding)",
+  "warmup_requests": 20,
+  "warmup_errors": 0,
+  "sample_per_set": 300,
+  "sample_seed": "clef-quant-latency-v1",
+  "public_sets": [
+    "anli_r1",
+    "anli_r2",
+    "anli_r3",
+    "arc_challenge",
+    "banking77",
+    "boolq",
+    "clinc150",
+    "contractnli",
+    "mmlu",
+    "ragtruth",
+    "sst5",
+    "when2call"
+  ],
+  "private_sets": [
+    "r1",
+    "r2",
+    "r4a",
+    "r4b"
+  ],
+  "overall": {
+    "n": 4800,
+    "errors": 0,
+    "p50_ms": 413.745,
+    "p95_ms": 3512.079,
+    "p99_ms": 3557.533,
+    "mean_ms": 802.08,
+    "min_ms": 237.369,
+    "max_ms": 4604.228,
+    "decisions_per_sec": 1.2467,
+    "wall_seconds": 3850.103
+  },
+  "per_set": {
+    "anli_r1": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 354.664,
+      "p95_ms": 385.351,
+      "p99_ms": 392.304,
+      "mean_ms": 362.787,
+      "min_ms": 293.078,
+      "max_ms": 416.988,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 288.3,
+        "p50": 287.0,
+        "max": 342
+      },
+      "private": false
+    },
+    "anli_r2": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 353.001,
+      "p95_ms": 382.501,
+      "p99_ms": 386.199,
+      "mean_ms": 360.109,
+      "min_ms": 292.428,
+      "max_ms": 412.98,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 285.6,
+        "p50": 285.0,
+        "max": 344
+      },
+      "private": false
+    },
+    "anli_r3": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 347.057,
+      "p95_ms": 392.778,
+      "p99_ms": 426.925,
+      "mean_ms": 341.309,
+      "min_ms": 270.389,
+      "max_ms": 495.51,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 274.8,
+        "p50": 269.0,
+        "max": 396
+      },
+      "private": false
+    },
+    "arc_challenge": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 266.567,
+      "p95_ms": 295.299,
+      "p99_ms": 351.063,
+      "mean_ms": 270.852,
+      "min_ms": 239.935,
+      "max_ms": 415.88,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 213.0,
+        "p50": 209.5,
+        "max": 343
+      },
+      "private": false
+    },
+    "banking77": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 1983.007,
+      "p95_ms": 1996.662,
+      "p99_ms": 2009.403,
+      "mean_ms": 1985.187,
+      "min_ms": 1967.984,
+      "max_ms": 2257.807,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 1836.4,
+        "p50": 1835.0,
+        "max": 1875
+      },
+      "private": false
+    },
+    "boolq": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 352.705,
+      "p95_ms": 518.359,
+      "p99_ms": 762.582,
+      "mean_ms": 368.483,
+      "min_ms": 246.705,
+      "max_ms": 897.588,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 300.9,
+        "p50": 285.0,
+        "max": 795
+      },
+      "private": false
+    },
+    "clinc150": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 3548.26,
+      "p95_ms": 3561.776,
+      "p99_ms": 3570.22,
+      "mean_ms": 3540.224,
+      "min_ms": 3491.499,
+      "max_ms": 3591.098,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 3103.1,
+        "p50": 3103.0,
+        "max": 3124
+      },
+      "private": false
+    },
+    "contractnli": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 382.639,
+      "p95_ms": 638.77,
+      "p99_ms": 777.283,
+      "mean_ms": 415.458,
+      "min_ms": 265.896,
+      "max_ms": 802.758,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 339.1,
+        "p50": 311.0,
+        "max": 710
+      },
+      "private": false
+    },
+    "mmlu": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 286.144,
+      "p95_ms": 551.538,
+      "p99_ms": 705.601,
+      "mean_ms": 326.014,
+      "min_ms": 240.676,
+      "max_ms": 1206.425,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 262.0,
+        "p50": 228.0,
+        "max": 1134
+      },
+      "private": false
+    },
+    "ragtruth": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 942.448,
+      "p95_ms": 1840.606,
+      "p99_ms": 2442.209,
+      "mean_ms": 1041.375,
+      "min_ms": 503.854,
+      "max_ms": 2797.04,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 946.2,
+        "p50": 867.5,
+        "max": 2553
+      },
+      "private": false
+    },
+    "sst5": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 267.515,
+      "p95_ms": 288.203,
+      "p99_ms": 291.166,
+      "mean_ms": 269.047,
+      "min_ms": 246.812,
+      "max_ms": 296.834,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 210.9,
+        "p50": 210.0,
+        "max": 251
+      },
+      "private": false
+    },
+    "when2call": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 803.998,
+      "p95_ms": 1619.229,
+      "p99_ms": 2002.919,
+      "mean_ms": 898.428,
+      "min_ms": 270.611,
+      "max_ms": 4604.228,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 804.9,
+        "p50": 763.0,
+        "max": 3873
+      },
+      "private": false
+    },
+    "r1": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 760.941,
+      "p95_ms": 894.342,
+      "p99_ms": 2417.796,
+      "mean_ms": 791.783,
+      "min_ms": 703.951,
+      "max_ms": 2581.946,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 725.4,
+        "p50": 681.0,
+        "max": 2400
+      },
+      "private": true
+    },
+    "r2": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 572.01,
+      "p95_ms": 1045.024,
+      "p99_ms": 1165.444,
+      "mean_ms": 660.488,
+      "min_ms": 412.304,
+      "max_ms": 1687.624,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 579.8,
+        "p50": 501.5,
+        "max": 1554
+      },
+      "private": true
+    },
+    "r4a": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 556.304,
+      "p95_ms": 1186.128,
+      "p99_ms": 1707.616,
+      "mean_ms": 657.722,
+      "min_ms": 509.757,
+      "max_ms": 2187.903,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 568.2,
+        "p50": 468.0,
+        "max": 1954
+      },
+      "private": true
+    },
+    "r4b": {
+      "n": 300,
+      "errors": 0,
+      "p50_ms": 269.18,
+      "p95_ms": 1330.699,
+      "p99_ms": 1628.349,
+      "mean_ms": 544.009,
+      "min_ms": 237.369,
+      "max_ms": 1850.734,
+      "decisions_per_sec": null,
+      "input_tokens": {
+        "mean": 468.7,
+        "p50": 220.0,
+        "max": 1718
+      },
+      "private": true
+    }
+  },
+  "input_token_buckets": [
+    {
+      "label": "129-256",
+      "n": 1235,
+      "p50_ms": 268.261,
+      "p95_ms": 295.242,
+      "p99_ms": 300.867,
+      "mean_ms": 271.085
+    },
+    {
+      "label": "257-512",
+      "n": 1816,
+      "p50_ms": 379.139,
+      "p95_ms": 562.004,
+      "p99_ms": 574.496,
+      "mean_ms": 414.181
+    },
+    {
+      "label": "513-1024",
+      "n": 870,
+      "p50_ms": 769.77,
+      "p95_ms": 1071.823,
+      "p99_ms": 1101.682,
+      "mean_ms": 806.478
+    },
+    {
+      "label": "1025-2048",
+      "n": 570,
+      "p50_ms": 1975.392,
+      "p95_ms": 1994.247,
+      "p99_ms": 2011.17,
+      "mean_ms": 1709.004
+    },
+    {
+      "label": "2049-4096",
+      "n": 309,
+      "p50_ms": 3547.959,
+      "p95_ms": 3561.819,
+      "p99_ms": 3574.521,
+      "mean_ms": 3518.676
+    }
+  ],
+  "peak_memory_gb": 21.649,
+  "peak_memory_source": "nvidia-smi compute-apps of the server process",
+  "nvidia_smi_peak_gb": 21.649,
+  "file_size_gb": 16.587,
+  "gpu_memory_utilization": null,
+  "other_gpu_processes_at_start": {
+    "count": 1,
+    "total_mib": 4742
+  },
+  "measured_at": "2026-10-23T02:45:00-0700"
+}

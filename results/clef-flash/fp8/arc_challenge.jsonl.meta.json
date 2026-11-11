@@ -1,0 +1,13 @@
+{
+  "records": 1172,
+  "errors": 0,
+  "units": 1,
+  "unit_wall_seconds_sum": 42.81,
+  "elapsed_seconds": null,
+  "peak_memory_gb": 13.559,
+  "engine": "vllm+clef_bench_vllm",
+  "engine_version": "vllm 0.29.0+5013de39.dev",
+  "batch_size": 1,
+  "concurrent_workers_hint": 1,
+  "gpu_memory_utilization": null
+}
