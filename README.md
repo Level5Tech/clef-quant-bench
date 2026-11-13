@@ -6,6 +6,8 @@ and Clef (27B), on one NVIDIA GB10.
 
 Paper: [arXiv:2611.15671](https://arxiv.org/abs/2611.15671)
 
+Archived release (all versions): [10.5281/zenodo.24184497](https://doi.org/10.5281/zenodo.24184497)
+
 ## What's here
 
 | Path | Contents |

@@ -7,9 +7,12 @@ authors:
   - family-names: Blagojevich
     given-names: Aleks
     affiliation: Level5
+    orcid: "https://orcid.org/0009-0001-4327-5464"
   - family-names: Sunderland
     given-names: Trevor
     affiliation: Level5
+    orcid: "https://orcid.org/0009-0005-4690-5221"
+doi: "10.5281/zenodo.24184497"
 repository-code: "https://github.com/Level5Tech/clef-quant-bench"
 license: Apache-2.0
 preferred-citation:
@@ -19,9 +22,11 @@ preferred-citation:
     - family-names: Blagojevich
       given-names: Aleks
       affiliation: Level5
+      orcid: "https://orcid.org/0009-0001-4327-5464"
     - family-names: Sunderland
       given-names: Trevor
       affiliation: Level5
+      orcid: "https://orcid.org/0009-0005-4690-5221"
   year: 2026
   month: 11
   doi: "10.48550/arXiv.2611.15671"
