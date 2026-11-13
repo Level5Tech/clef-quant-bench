@@ -4,6 +4,8 @@ Code, results and analysis for the paper of the same title, by Aleks Blagojevich
 engine, restart, batch and kernel drift against 8-bit and 4-bit quantization effects on two of Cloudflare's decision models, Clef-flash (9B)
 and Clef (27B), on one NVIDIA GB10.
 
+Paper: [arXiv:2611.15671](https://arxiv.org/abs/2611.15671)
+
 ## What's here
 
 | Path | Contents |
@@ -60,4 +62,18 @@ own licenses, listed in `datasets/DATASETS.md`.
 
 ## Citation
 
-See `CITATION.cff`.
+Please cite the paper:
+
+```bibtex
+@misc{blagojevich2026noisefloorquantizationcomparison,
+  title={The Noise Floor of a Quantization Comparison: Engine, restart, batch and kernel drift, measured against 8-bit and 4-bit effects in two decision models},
+  author={Aleks Blagojevich and Trevor Sunderland},
+  year={2026},
+  eprint={2611.15671},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2611.15671},
+}
+```
+
+`CITATION.cff` holds the same entry, and GitHub's "Cite this repository" button reads it.

@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "If you use this work, please cite it."
 title: "The Noise Floor of a Quantization Comparison"
 type: software
+abstract: "Code, quantization recipes, per-record outputs and the pre-registration for the paper The Noise Floor of a Quantization Comparison (arXiv:2611.15671)."
 authors:
   - family-names: Blagojevich
     given-names: Aleks
@@ -11,3 +12,17 @@ authors:
     affiliation: Level5
 repository-code: "https://github.com/Level5Tech/clef-quant-bench"
 license: Apache-2.0
+preferred-citation:
+  type: article
+  title: "The Noise Floor of a Quantization Comparison: Engine, restart, batch and kernel drift, measured against 8-bit and 4-bit effects in two decision models"
+  authors:
+    - family-names: Blagojevich
+      given-names: Aleks
+      affiliation: Level5
+    - family-names: Sunderland
+      given-names: Trevor
+      affiliation: Level5
+  year: 2026
+  month: 11
+  doi: "10.48550/arXiv.2611.15671"
+  url: "https://arxiv.org/abs/2611.15671"
