@@ -4,7 +4,7 @@ Code, results and analysis for the paper of the same title, by Aleks Blagojevich
 engine, restart, batch and kernel drift against 8-bit and 4-bit quantization effects on two of Cloudflare's decision models, Clef-flash (9B)
 and Clef (27B), on one NVIDIA GB10.
 
-Paper: [arXiv:2611.15671](https://arxiv.org/abs/2611.15671)
+Paper: [arXiv:2611.15671](https://arxiv.org/abs/2611.15671) ([Hugging Face paper page](https://huggingface.co/papers/2611.15671))
 
 Archived release (all versions): [10.5281/zenodo.24184497](https://doi.org/10.5281/zenodo.24184497)
 
@@ -21,7 +21,9 @@ Archived release (all versions): [10.5281/zenodo.24184497](https://doi.org/10.52
 | `leakscan/` | The scanner run on this tree before release |
 | `PREREGISTRATION.md` | The pre-registered hypotheses and report tests |
 
-Quantized weights are at https://huggingface.co/Level5Tech.
+Quantized weights are at https://huggingface.co/Level5Tech. The collection
+[The Noise Floor of a Quantization Comparison](https://huggingface.co/collections/Level5Tech/the-noise-floor-of-a-quantization-comparison-6afd62e8288cc5e14becefaf)
+gathers the paper and all six builds.
 
 ## Reproducing the numbers
 
